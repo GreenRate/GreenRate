@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_tap_your_name">please type your name\n</string>
+    <string name="please_tap_you_password">please type your password</string>
+    <string name="log_in">log in\n</string>
+    <string name="let_s_play">let\'s play</string>
+    <string name="let_s_log_in">let\'s login</string>
+    <string name="les_informations_sur_votre_localisation_nous_permettent_de_calculer_de_fa_on_pr_cise_le_bilan_carbone_du_produit_et_de_son_emballage_de_sa_fabrication_son_achat">Les informations sur votre localisation nous permettent de calculer de façon précise le bilan carbone du produit et de son emballage de sa fabrication à son achat</string>
+    <string name="param_tre_de_l_application">Paramètre de l\'application</string>
+    <string name="acc_s_appareil_photo">Accès Appareil Photo</string>
+    <string name="g_olocalisation">Géolocalisation</string>
+    <string name="pourquoi_nous_autorisez_l_acc_s">Pourquoi nous autorisez l\'accès ?</string>
+    <string name="pr_f_rences_alimentaires">Préférences alimentaires</string>
+    <string name="contribuer">Contribuer</string>
+    <string name="nous_contacter">Nous contacter</string>
+    <string name="param_tre">Paramètres</string>
+    <string name="nos_partenaires">Nos partenaires</string>
+    <string name="todo">TODO</string>
+    <string name="chevron"><![CDATA[>]]></string>
+    <string name="comparer_vos_produits">Comparer vos produits</string>
+    <string name="produit_1">Produit 1</string>
+    <string name="nutriscore">Nutriscore</string>
+    <string name="bilan_carbone">Bilan carbone : </string>
+    <string name="prix">Prix : </string>
+    <string name="produit_2">Produit 2</string>
+    <string name="carbone1">Carbone</string>
+    <string name="carbone2">Carbone</string>
+    <string name="prix1">Prix 1</string>
+    <string name="prix2">Prix 2</string>
+    <color name="green">#24CA33</color>
+</resources>
