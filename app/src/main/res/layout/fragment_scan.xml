@@ -28,7 +28,7 @@
         tools:text="Question ?" />
 
     <Button
-        android:id="@+id/answer1"
+        android:id="@+id/button_comparaison"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_margin="4dp"

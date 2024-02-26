@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfilFragment">
+    tools:context=".ProfilFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -69,7 +70,7 @@
         android:contentDescription="@string/todo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_settings"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="350dp"
@@ -80,7 +81,7 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_pref_alim"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="215dp"
@@ -91,7 +92,7 @@
         android:text="@string/chevron"
         android:textStyle="bold"/>
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_contribuer"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="255dp"
@@ -103,7 +104,7 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_contact"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="350dp"
@@ -114,7 +115,7 @@
         android:textSize="20sp"
         android:textStyle="bold" />
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_partenaire"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="335dp"

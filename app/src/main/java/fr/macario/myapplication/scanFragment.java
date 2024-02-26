@@ -48,9 +48,29 @@ public class scanFragment extends Fragment {
 
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                profileFragment profileFragment = new profileFragment();
+                ProfilFragment profileFragment = new ProfilFragment();
                 fragmentTransaction.add(R.id.fragment_container_view, profileFragment);
                 fragmentTransaction.commit();
+            }
+        });
+
+        binding.buttonComparaison.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("comparaison_go", "l'utilisateur va vers les comparaison");
+
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                compare_fragment compareFragment = new compare_fragment();
+                fragmentTransaction.add(R.id.fragment_container_view, compareFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        binding.answer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("test", "message de test");
             }
         });
 
