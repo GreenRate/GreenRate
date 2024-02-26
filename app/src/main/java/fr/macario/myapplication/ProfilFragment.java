@@ -45,7 +45,10 @@ public class ProfilFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Log.d("settings_go", "l'utilisateur va vers la page d'option");
+                String userNameInput = new WelcomeFragment().getUserNameInput();
+
+                Log.d("test", userNameInput);
+
 
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

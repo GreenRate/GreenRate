@@ -1,15 +1,8 @@
 package fr.macario.myapplication;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import androidx.annotation.DrawableRes;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
+import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -17,80 +10,119 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import fr.macario.myapplication.databinding.FragmentWelcomeBinding;
 
 
 public class WelcomeFragment extends Fragment {
 
+
     private FragmentWelcomeBinding binding;
+    public static String userNameInput = "user";
+
+
+    public String getUserNameInput (){
+        return userNameInput;
+    }
+
 
     public WelcomeFragment() {
         // Required empty public constructor
+
     }
 
-    public static WelcomeFragment newInstance() {
-        WelcomeFragment fragment = new WelcomeFragment();
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentWelcomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
+
+
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        final String[] userName = new String[1];
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.ButtonLogin.setEnabled(false);
-
-        binding.usernameInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        if (preferences.getString("userName", "user").equals("user")){
+            binding.ButtonLogin.setEnabled(false);
 
 
-            @Override
-            public void afterTextChanged(Editable s) {
-                userName[0] = s.toString();
 
-                boolean usernameIsEmpty = s.toString().isEmpty();
+            binding.usernameInput.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-                if (usernameIsEmpty) {
-                    binding.ButtonLogin.setEnabled(!usernameIsEmpty);
-                } else {
-                    binding.ButtonLogin.setEnabled(usernameIsEmpty);
                 }
 
-                binding.ButtonLogin.setEnabled(!usernameIsEmpty);
-            }
-        });
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-        binding.ButtonLogin.setOnClickListener(new View.OnClickListener(){
+                }
 
-            @Override
-            public void onClick(View v) {
 
-                Log.d("userName", "l'utilisateur s'appelle " + userName[0]);
+                @Override
+                public void afterTextChanged(Editable s) {
 
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                scanFragment ScanFragment = new scanFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
-                fragmentTransaction.commit();
-            }
-        });
+                    userNameInput = s.toString();
+
+                    boolean usernameIsEmpty = s.toString().isEmpty();
+
+                    if (usernameIsEmpty) {
+                        binding.ButtonLogin.setEnabled(false);
+                    } else {
+                        binding.ButtonLogin.setEnabled(usernameIsEmpty);
+                    }
+
+                    binding.ButtonLogin.setEnabled(!usernameIsEmpty);
+                }
+            });
+
+            binding.ButtonLogin.setOnClickListener(new View.OnClickListener(){
+
+                @Override
+                public void onClick(View v) {
+
+                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                    SharedPreferences.Editor editor = preferences.edit();
+
+                    editor.putString("userName", userNameInput);
+                    editor.apply();
+
+                    Log.d("userName", "l'utilisateur s'appelle " + preferences.getString("userName", "user"));
+                    userNameInput = preferences.getString("userName", "user");
+
+                    FragmentManager fragmentManager = getParentFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    scanFragment ScanFragment = new scanFragment();
+                    fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
+                    fragmentTransaction.commit();
+
+                }
+            });
+        } else {
+
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            scanFragment ScanFragment = new scanFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
+            fragmentTransaction.commit();
+        }
+
+
+
     }
+
+
+
 }

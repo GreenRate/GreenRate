@@ -28,6 +28,8 @@
         android:textSize="20sp"
         android:layout_margin="24dp"/>
 
+
+
     <EditText
         android:id="@+id/usernameInput"
         android:layout_width="match_parent"
