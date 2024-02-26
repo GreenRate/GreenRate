@@ -12,13 +12,13 @@
         android:layout_marginTop="181dp">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/buttonproduit1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:text="" />
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/nomproduit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -28,66 +28,66 @@
             android:textSize="18sp" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageproduit1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/textView12"
+            android:layout_below="@id/nomproduit1"
             android:layout_centerHorizontal="true"
             android:src="@drawable/start" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/nutri1"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/imageView6"
+            android:layout_below="@id/imageproduit1"
             android:layout_centerHorizontal="true"
             android:src="@drawable/_60_f_661042429_6zsekoy4ufleorcynmyxqlkgyhmu1moz" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/eco1"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_below="@id/imageView7"
+            android:layout_below="@id/nutri1"
             android:layout_centerHorizontal="true"
             android:src="@drawable/p29734154d5052473g" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/carbone1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView8"
+            android:layout_below="@id/eco1"
             android:text="@string/bilan_carbone"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/valcarbone1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView8"
-            android:layout_alignStart="@id/textView15"
-            android:layout_alignLeft="@id/textView15"
+            android:layout_below="@id/eco1"
+            android:layout_alignStart="@id/carbone1"
+            android:layout_alignLeft="@id/carbone1"
             android:layout_marginHorizontal="130dp"
             android:text="@string/carbone1"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/prix1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView15"
+            android:layout_below="@id/carbone1"
             android:text="@string/prix"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/valprix1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView15"
-            android:layout_alignStart="@id/textView17"
-            android:layout_alignLeft="@id/textView17"
+            android:layout_below="@id/carbone1"
+            android:layout_alignStart="@id/prix1"
+            android:layout_alignLeft="@id/prix1"
             android:layout_marginHorizontal="130dp"
             android:text="@string/prix1"
             android:textColor="@color/black"
@@ -105,14 +105,14 @@
         android:layout_marginTop="181dp">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/buttonproduit2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:text="" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/nomproduit2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -122,66 +122,66 @@
             android:textSize="18sp" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/imageproduit2"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/textView19"
+            android:layout_below="@id/nomproduit2"
             android:layout_centerHorizontal="true"
             android:src="@drawable/start" />
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/nutri2"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_below="@id/imageView20"
+            android:layout_below="@id/imageproduit2"
             android:layout_centerHorizontal="true"
             android:src="@drawable/_60_f_661042429_6zsekoy4ufleorcynmyxqlkgyhmu1moz" />
 
         <ImageView
-            android:id="@+id/imageView22"
+            android:id="@+id/eco2"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_below="@id/imageView21"
+            android:layout_below="@id/nutri2"
             android:layout_centerHorizontal="true"
             android:src="@drawable/p29734154d5052473g" />
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/carbone2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView22"
+            android:layout_below="@id/eco2"
             android:text="@string/bilan_carbone"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/valcarbone2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView22"
-            android:layout_alignStart="@id/textView23"
-            android:layout_alignLeft="@id/textView23"
+            android:layout_below="@id/eco2"
+            android:layout_alignStart="@id/carbone2"
+            android:layout_alignLeft="@id/carbone2"
             android:layout_marginHorizontal="130dp"
             android:text="@string/carbone2"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/prix2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView23"
+            android:layout_below="@id/carbone2"
             android:text="@string/prix"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/valprix2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView23"
-            android:layout_alignStart="@id/textView25"
-            android:layout_alignLeft="@id/textView25"
+            android:layout_below="@id/valcarbone2"
+            android:layout_alignStart="@id/prix2"
+            android:layout_alignLeft="@id/prix2"
             android:layout_marginHorizontal="130dp"
             android:text="@string/prix2"
             android:textColor="@color/black"
@@ -195,7 +195,7 @@
 
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/nompagecompa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/comparer_vos_produits"
