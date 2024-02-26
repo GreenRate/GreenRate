@@ -39,7 +39,7 @@
         android:paddingVertical="16dp"
         android:textColor="@color/white"
         android:textSize="20sp"
-        tools:text="Answer1" />
+        tools:text="Comparez vos produit" />
 
     <Button
         android:id="@+id/answer2"
