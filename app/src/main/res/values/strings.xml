@@ -32,5 +32,10 @@
     <string name="historique_des_produits">Historique des produits</string>
     <string name="titregoeloc">Si vous ne nous autorisez pas l\'accès à votre géolocalisation ?</string>
     <string name="textgeoloc">Le suivis des produits s\'arrêtera à leur sortie de l\'usine, c\'est-à-dire, que le bilan carbone de leur trajet entre l\'usine et leur mise en rayon ne sera pas calculé</string>
+    <string name="qualit_nutritionnelle">Qualitée nutritionnelle</string>
+    <string name="ingredient">Ingrédients</string>
+    <string name="environnement">Environnement</string>
+    <string name="transformation_des_aliments">Transformation des aliments</string>
+    <string name="label">Label</string>
     <color name="green">#24CA33</color>
 </resources>
