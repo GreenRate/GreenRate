@@ -67,5 +67,39 @@ public class ProfilFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.buttonPrefAlim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        binding.buttonContribuer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        binding.buttonContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        binding.buttonPartenaire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
