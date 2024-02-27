@@ -3,6 +3,8 @@ package fr.macario.myapplication;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,5 +35,16 @@ public class compare_fragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        binding.backcompare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                scanerFragment scanerFragment = new scanerFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, scanerFragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }

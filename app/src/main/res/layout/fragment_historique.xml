@@ -6,11 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HistoriqueFragment">
+    tools:context=".HistoriqueFragment"
+    android:background="@color/white">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backhistorique"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backfleche"
+            tools:ignore="PxUsage" />
 
         <TextView
             android:layout_width="wrap_content"

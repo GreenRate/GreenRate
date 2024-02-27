@@ -70,6 +70,12 @@ public class scanerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                HistoriqueFragment historiqueFragment = new HistoriqueFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, historiqueFragment);
+                fragmentTransaction.commit();
             }
         });
 
