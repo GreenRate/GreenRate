@@ -79,7 +79,7 @@
         android:textSize="16sp"
         android:textColor="@color/black"
         android:textAlignment="center"
-        android:text="@string/les_informations_sur_votre_localisation_nous_permettent_de_calculer_de_fa_on_pr_cise_le_bilan_carbone_du_produit_et_de_son_emballage_de_sa_fabrication_son_achat" />
+        android:text="@string/textlocalisation" />
 
     <ImageButton
         android:id="@+id/backsetting"
