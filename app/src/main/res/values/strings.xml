@@ -7,7 +7,7 @@
     <string name="log_in">log in\n</string>
     <string name="let_s_play">let\'s play</string>
     <string name="let_s_log_in">let\'s login</string>
-    <string name="les_informations_sur_votre_localisation_nous_permettent_de_calculer_de_fa_on_pr_cise_le_bilan_carbone_du_produit_et_de_son_emballage_de_sa_fabrication_son_achat">Les informations sur votre localisation nous permettent de calculer de façon précise le bilan carbone du produit et de son emballage de sa fabrication à son achat</string>
+    <string name="textlocalisation">Les informations sur votre localisation nous permettent de calculer de façon précise le bilan carbone du produit et de son emballage de sa fabrication à son achat</string>
     <string name="param_tre_de_l_application">Paramètre de l\'application</string>
     <string name="acc_s_appareil_photo">Accès Appareil Photo</string>
     <string name="g_olocalisation">Géolocalisation</string>
@@ -29,5 +29,8 @@
     <string name="carbone2">Carbone</string>
     <string name="prix1">Prix 1</string>
     <string name="prix2">Prix 2</string>
+    <string name="historique_des_produits">Historique des produits</string>
+    <string name="titregoeloc">Si vous ne nous autorisez pas l\'accès à votre géolocalisation ?</string>
+    <string name="textgeoloc">Le suivis des produits s\'arrêtera à leur sortie de l\'usine, c\'est-à-dire, que le bilan carbone de leur trajet entre l\'usine et leur mise en rayon ne sera pas calculé</string>
     <color name="green">#24CA33</color>
 </resources>
