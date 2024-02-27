@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import fr.macario.myapplication.databinding.FragmentProfilBinding;
-import fr.macario.myapplication.databinding.FragmentScanBinding;
 
 
 public class ProfilFragment extends Fragment {

@@ -41,7 +41,7 @@
             android:layout_height="100dp"
             android:layout_below="@id/imageproduit1"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/_60_f_661042429_6zsekoy4ufleorcynmyxqlkgyhmu1moz" />
+            android:src="@drawable/nutriscore" />
 
         <ImageView
             android:id="@+id/eco1"
@@ -139,7 +139,7 @@
             android:layout_height="100dp"
             android:layout_below="@id/imageproduit2"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/_60_f_661042429_6zsekoy4ufleorcynmyxqlkgyhmu1moz" />
+            android:src="@drawable/nutriscore" />
 
         <ImageView
             android:id="@+id/eco2"
