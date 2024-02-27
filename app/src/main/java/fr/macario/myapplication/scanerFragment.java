@@ -52,7 +52,7 @@ public class scanerFragment extends Fragment {
             }
         });
 
-        binding.buttonList.setOnClickListener(new View.OnClickListener() {
+        binding.comparepage.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
