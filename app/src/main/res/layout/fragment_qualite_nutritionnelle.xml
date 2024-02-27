@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".qualite_nutritionnelleFragment">
+    tools:context=".qualite_nutritionnelleFragment"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/entetequalinutri"

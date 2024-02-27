@@ -52,6 +52,19 @@ public class PrefAlimentairesFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.QualiteNutritionnellechevron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                qualite_nutritionnelleFragment qualiteNutritionnelleFragment = new qualite_nutritionnelleFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, qualiteNutritionnelleFragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 
 
