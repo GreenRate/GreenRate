@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -208,6 +209,17 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/backcompare"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backfleche"
+            tools:ignore="PxUsage" />
 
     </RelativeLayout>
 

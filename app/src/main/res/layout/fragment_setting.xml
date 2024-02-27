@@ -81,5 +81,15 @@
         android:textAlignment="center"
         android:text="@string/les_informations_sur_votre_localisation_nous_permettent_de_calculer_de_fa_on_pr_cise_le_bilan_carbone_du_produit_et_de_son_emballage_de_sa_fabrication_son_achat" />
 
+    <ImageButton
+        android:id="@+id/backsetting"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/backfleche"
+        tools:ignore="PxUsage" />
 
 </FrameLayout>

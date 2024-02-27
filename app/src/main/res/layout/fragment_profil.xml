@@ -125,5 +125,15 @@
         android:textSize="20sp"
         android:text="@string/chevron"
         android:textStyle="bold"/>
+    <ImageButton
+        android:id="@+id/backprofil"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/backfleche"
+        tools:ignore="PxUsage" />
 
 </FrameLayout>
