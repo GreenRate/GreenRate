@@ -56,5 +56,16 @@ public class ProfilFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.backprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                scanerFragment scanerFragment = new scanerFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, scanerFragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }
