@@ -13,16 +13,12 @@ import android.view.ViewGroup;
 import fr.macario.myapplication.databinding.FragmentCompareBinding;
 import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
-
 public class compare_fragment extends Fragment {
-
     private FragmentCompareBinding binding;
-
     public compare_fragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

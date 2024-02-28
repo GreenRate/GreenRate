@@ -17,23 +17,13 @@ import fr.macario.myapplication.databinding.FragmentQualiteNutritionnelleBinding
 public class qualite_nutritionnelleFragment extends Fragment {
 
     private FragmentQualiteNutritionnelleBinding binding;
-
-    public qualite_nutritionnelleFragment() {
-        // Required empty public constructor
-    }
-
-
+    public qualite_nutritionnelleFragment() {}
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentQualiteNutritionnelleBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -45,7 +35,6 @@ public class qualite_nutritionnelleFragment extends Fragment {
         binding.backprefalimantaire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();

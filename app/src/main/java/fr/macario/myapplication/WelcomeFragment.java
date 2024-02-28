@@ -17,14 +17,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import fr.macario.myapplication.databinding.FragmentWelcomeBinding;
 
-
 public class WelcomeFragment extends Fragment {
 
     private FragmentWelcomeBinding binding;
     public static String userName;
-
     public String getUserNameInput (){return userName;}
-
     public WelcomeFragment() {}
 
     @Override

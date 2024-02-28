@@ -19,17 +19,10 @@ import fr.macario.myapplication.databinding.FragmentScanerBinding;
 public class HistoriqueFragment extends Fragment {
 
     private FragmentHistoriqueBinding binding;
-
-    public HistoriqueFragment() {
-        // Required empty public constructor
-    }
-
+    public HistoriqueFragment() {}
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-    }
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,12 +33,9 @@ public class HistoriqueFragment extends Fragment {
 
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         binding.backhistorique.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 scanerFragment scanerFragment = new scanerFragment();
