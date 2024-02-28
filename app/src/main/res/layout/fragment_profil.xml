@@ -144,7 +144,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="italic"
-        android:text="user"/>
+        android:text="@string/user"/>
 
 
 </FrameLayout>

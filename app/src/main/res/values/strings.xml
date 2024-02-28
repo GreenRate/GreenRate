@@ -37,5 +37,14 @@
     <string name="environnement">Environnement</string>
     <string name="transformation_des_aliments">Transformation des aliments</string>
     <string name="label">Label</string>
+    <string name="user">user</string>
+    <string name="bonne_qualit_nutritionnelle">Bonne qualité nutritionnelle :</string>
+    <string name="pas_important">Pas Important</string>
+    <string name="important">Important</string>
+    <string name="obligatoire">Obligatoire</string>
+    <string name="faible_quantit_de_mati_re_grasse">Faible quantité de matière grasse :</string>
+    <string name="faible_quantit_de_sel">Faible quantité de sel :</string>
+    <string name="faible_quantit_de_sucre">Faible quantité de sucre :</string>
+    <string name="faible_quantit_d_acide_gras_satur_e">Faible quantité d\'acide gras saturée :</string>
     <color name="green">#24CA33</color>
 </resources>

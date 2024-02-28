@@ -1,29 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".qualite_nutritionnelleFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/zentetequaliteenutri">
+        <TextView
+            android:id="@+id/entetequalinutri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qualit_nutritionnelle"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+        <ImageButton
+            android:id="@+id/backprefalimantaire"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/backfleche"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/zqualiteenutri">
+        <TextView
+            android:id="@+id/qualitenutri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bonne_qualit_nutritionnelle"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <Button
+            android:id="@+id/pasimportantqualinutri"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantqualinutri"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoirequalinutri"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/zmatieregrasse">
+        <TextView
+            android:id="@+id/matiereqrasse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faible_quantit_de_mati_re_grasse"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <Button
+            android:id="@+id/pasimportantmatiereqrasse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantmatiereqrasse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoirematiereqrasse"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/zsel">
+        <TextView
+            android:id="@+id/sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faible_quantit_de_sel"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <Button
+            android:id="@+id/pasimportantsel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantsel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoiresel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/zsucre">
+        <TextView
+            android:id="@+id/sucre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faible_quantit_de_sucre"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <Button
+            android:id="@+id/pasimportantsucre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantsucre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoiresucre"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/zgras">
+        <TextView
+            android:id="@+id/gras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faible_quantit_d_acide_gras_satur_e"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp" />
+        <Button
+            android:id="@+id/pasimportantgras"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantgars"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoiregras"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/entetequalinutri"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/qualit_nutritionnelle"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-    <ImageButton
-        android:id="@+id/backprefalimantaire"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:src="@drawable/backfleche"
-        android:background="@android:color/transparent" />
-
-</FrameLayout>
+</LinearLayout>
