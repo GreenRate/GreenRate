@@ -11,14 +11,7 @@ import android.view.ViewGroup;
 
 public class page_chargementFragment extends Fragment {
 
-    public page_chargementFragment() {
-        // Required empty public constructor
-    }
-
-    public static page_chargementFragment newInstance(String param1, String param2) {
-        page_chargementFragment fragment = new page_chargementFragment();
-        return fragment;
-    }
+    public page_chargementFragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,9 +19,7 @@ public class page_chargementFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_page_chargement, container, false);
     }
 }

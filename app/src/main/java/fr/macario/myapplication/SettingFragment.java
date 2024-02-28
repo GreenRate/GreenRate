@@ -15,15 +15,10 @@ import android.view.ViewGroup;
 import fr.macario.myapplication.databinding.FragmentSettingBinding;
 import fr.macario.myapplication.databinding.FragmentWelcomeBinding;
 
-
 public class SettingFragment extends Fragment {
 
     private FragmentSettingBinding binding;
-
-    public SettingFragment() {
-        // Required empty public constructor
-    }
-
+    public SettingFragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,9 +27,7 @@ public class SettingFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSettingBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -42,7 +35,6 @@ public class SettingFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         binding.backsetting.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -19,20 +19,15 @@ public class ProfilFragment extends Fragment {
     private FragmentProfilBinding binding;
     public String userNameInput = new WelcomeFragment().getUserNameInput();
 
-    public ProfilFragment() {
-
-    }
+    public ProfilFragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentProfilBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -40,16 +35,11 @@ public class ProfilFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
-
         binding.username.setText(userNameInput);
-
         binding.buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Log.d("test", userNameInput);
-
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 SettingFragment settingFragment = new SettingFragment();
@@ -72,8 +62,6 @@ public class ProfilFragment extends Fragment {
         binding.buttonPrefAlim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();

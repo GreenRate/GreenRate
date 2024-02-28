@@ -17,26 +17,17 @@ import fr.macario.myapplication.databinding.FragmentProfilBinding;
 public class PrefAlimentairesFragment extends Fragment {
 
     private FragmentPrefAlimentairesBinding binding;
-
     public PrefAlimentairesFragment() {
-
-    }
-
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentPrefAlimentairesBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -44,7 +35,6 @@ public class PrefAlimentairesFragment extends Fragment {
         binding.backprefalimantaire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 ProfilFragment profileFragment = new ProfilFragment();
@@ -56,8 +46,6 @@ public class PrefAlimentairesFragment extends Fragment {
         binding.QualiteNutritionnellechevron.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 qualite_nutritionnelleFragment qualiteNutritionnelleFragment = new qualite_nutritionnelleFragment();
