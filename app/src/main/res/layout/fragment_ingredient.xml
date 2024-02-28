@@ -62,7 +62,7 @@
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"
-          android:layout_marginHorizontal="310dp"
+          android:layout_marginHorizontal="290dp"
           android:layout_centerVertical="true" />
    </RelativeLayout>
    <RelativeLayout
@@ -99,7 +99,7 @@
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"
-          android:layout_marginHorizontal="310dp"
+          android:layout_marginHorizontal="290dp"
           android:layout_centerVertical="true" />
    </RelativeLayout>
    <RelativeLayout
@@ -136,7 +136,7 @@
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"
-          android:layout_marginHorizontal="310dp"
+          android:layout_marginHorizontal="290dp"
           android:layout_centerVertical="true" />
    </RelativeLayout>
 
