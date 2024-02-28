@@ -27,6 +27,80 @@
             android:src="@drawable/backfleche"
             android:background="@android:color/transparent"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zbio"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp" />
+        <Button
+            android:id="@+id/pasimportantbio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantbio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoirebio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zequitable"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/equitable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commerce_quitable"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20sp" />
+        <Button
+            android:id="@+id/pasimportantequitable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/pas_important"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/importantequitable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/important"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        <Button
+            android:id="@+id/obligatoireequitable"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/obligatoire"
+            android:layout_marginHorizontal="310dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
 
 
 

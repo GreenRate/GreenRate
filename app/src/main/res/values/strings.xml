@@ -50,5 +50,7 @@
     <string name="vegan">Vegan :</string>
     <string name="v_g_tarien">Végétarien :</string>
     <string name="sans_gluten">Sans gluten :</string>
+    <string name="bio">Bio :</string>
+    <string name="commerce_quitable">Commerce équitable :</string>
     <color name="green">#24CA33</color>
 </resources>
