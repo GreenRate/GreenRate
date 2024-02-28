@@ -17,7 +17,7 @@ import fr.macario.myapplication.databinding.FragmentProfilBinding;
 public class ProfilFragment extends Fragment {
 
     private FragmentProfilBinding binding;
-    String userNameInput = new WelcomeFragment().getUserNameInput();
+    public String userNameInput = new WelcomeFragment().getUserNameInput();
 
     public ProfilFragment() {
 
@@ -46,7 +46,6 @@ public class ProfilFragment extends Fragment {
         binding.buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
 
                 Log.d("test", userNameInput);
 
