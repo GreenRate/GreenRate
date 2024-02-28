@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingredientFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:id="@+id/zenteteingredient">
+      <TextView
+         android:id="@+id/enteteingredient"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="@string/ingr_dient"
+         android:textColor="@color/black"
+         android:textSize="25sp"
+         android:textStyle="bold"
+         android:layout_centerInParent="true"/>
+      <ImageButton
+          android:id="@+id/backingredient"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginTop="15dp"
+          android:layout_centerVertical="true"
+          android:src="@drawable/backfleche"
+          android:background="@android:color/transparent" />
+   </RelativeLayout>
+   <RelativeLayout
+      android:id="@+id/zvegan"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+      <TextView
+          android:id="@+id/vegan"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/vegan"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:layout_marginStart="20sp" />
+      <Button
+          android:id="@+id/pasimportantvegan"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/pas_important"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/importantvegan"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/important"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/obligatoirevegan"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/obligatoire"
+          android:layout_marginHorizontal="310dp"
+          android:layout_centerVertical="true" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/zvegetarien"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+      <TextView
+          android:id="@+id/vegetarien"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/v_g_tarien"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:layout_marginStart="20sp" />
+      <Button
+          android:id="@+id/pasimportantvegetarien"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/pas_important"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/importantvegetarien"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/important"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/obligatoirevegetarien"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/obligatoire"
+          android:layout_marginHorizontal="310dp"
+          android:layout_centerVertical="true" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/zgluten"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+      <TextView
+          android:id="@+id/gluten"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/sans_gluten"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          android:layout_marginStart="20sp" />
+      <Button
+          android:id="@+id/pasimportantgluten"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/pas_important"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/importantgluten"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/important"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true" />
+      <Button
+          android:id="@+id/obligatoiregluten"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:text="@string/obligatoire"
+          android:layout_marginHorizontal="310dp"
+          android:layout_centerVertical="true" />
+   </RelativeLayout>
+
+
+</LinearLayout>

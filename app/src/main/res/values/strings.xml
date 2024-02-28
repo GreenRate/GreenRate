@@ -46,5 +46,9 @@
     <string name="faible_quantit_de_sel">Faible quantité de sel :</string>
     <string name="faible_quantit_de_sucre">Faible quantité de sucre :</string>
     <string name="faible_quantit_d_acide_gras_satur_e">Faible quantité d\'acide gras saturée :</string>
+    <string name="ingr_dient">Ingrédient</string>
+    <string name="vegan">Vegan :</string>
+    <string name="v_g_tarien">Végétarien :</string>
+    <string name="sans_gluten">Sans gluten :</string>
     <color name="green">#24CA33</color>
 </resources>

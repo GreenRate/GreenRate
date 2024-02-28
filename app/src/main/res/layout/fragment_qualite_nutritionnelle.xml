@@ -41,8 +41,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginStart="20sp"
-            android:layout_marginLeft="20sp" />
+            android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantqualinutri"
             android:layout_width="100dp"
@@ -79,8 +78,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginStart="20sp"
-            android:layout_marginLeft="20sp" />
+            android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantmatiereqrasse"
             android:layout_width="100dp"
@@ -117,8 +115,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginStart="20sp"
-            android:layout_marginLeft="20sp" />
+            android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantsel"
             android:layout_width="100dp"
@@ -155,8 +152,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginStart="20sp"
-            android:layout_marginLeft="20sp" />
+            android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantsucre"
             android:layout_width="100dp"
@@ -193,8 +189,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_marginStart="20sp"
-            android:layout_marginLeft="20sp" />
+            android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantgras"
             android:layout_width="100dp"
