@@ -54,7 +54,7 @@ public class WelcomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        //if (preferences.getString("userName", "user").equals("user")){
+        if (preferences.getString("userName", "user").equals("user")){
             binding.ButtonLogin.setEnabled(false);
 
 
@@ -99,6 +99,8 @@ public class WelcomeFragment extends Fragment {
                     editor.putString("userName", userNameInput);
                     editor.apply();
 
+
+
                     Log.d("userName", "l'utilisateur s'appelle " + preferences.getString("userName", "user"));
                     userNameInput = preferences.getString("userName", "user");
 
@@ -111,14 +113,14 @@ public class WelcomeFragment extends Fragment {
 
                 }
             });
-        /*} else {
+        } else {
 
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            scanFragment ScanFragment = new scanFragment();
-            fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
+            scanerFragment ScanerFragment = new scanerFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, ScanerFragment);
             fragmentTransaction.commit();
-        }*/
+        }
 
 
 
