@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LabelFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
+
     <RelativeLayout
         android:id="@+id/zentetelabel"
         android:layout_width="match_parent"

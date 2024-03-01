@@ -2,6 +2,7 @@ package fr.macario.myapplication;
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.helper.widget.Layer;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -53,7 +54,36 @@ public class PrefAlimentairesFragment extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.ingredientschevron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                ingredientFragment ingredientFragment = new ingredientFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, ingredientFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        binding.transfoalimentchevron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        binding.labelchevron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                LabelFragment labelFragment = new LabelFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, labelFragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+
     }
-
-
 }
