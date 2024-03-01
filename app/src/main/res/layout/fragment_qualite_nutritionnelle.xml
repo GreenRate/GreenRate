@@ -32,9 +32,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/zqualiteenutri">
+        android:id="@+id/zonequaliteenutritionnelle">
         <TextView
-            android:id="@+id/qualitenutri"
+            android:id="@+id/quetionqualiteenutritionnelle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bonne_qualit_nutritionnelle"
@@ -43,14 +43,14 @@
             android:textColor="@color/black"
             android:layout_marginStart="20sp" />
         <Button
-            android:id="@+id/pasimportantqualinutri"
+            android:id="@+id/pasimportantqualiteenutritionnelle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/pas_important"
             android:layout_centerVertical="true" />
         <Button
-            android:id="@+id/importantqualinutri"
+            android:id="@+id/importantqualiteenutritionnelle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -58,7 +58,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true" />
         <Button
-            android:id="@+id/obligatoirequalinutri"
+            android:id="@+id/obligatoirequaliteenutritionnelle"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -69,9 +69,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/zmatieregrasse">
+        android:id="@+id/zonematieregrasse">
         <TextView
-            android:id="@+id/matiereqrasse"
+            android:id="@+id/quetionmatiereqrasse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/faible_quantit_de_mati_re_grasse"
@@ -106,9 +106,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/zsel">
+        android:id="@+id/zonesel">
         <TextView
-            android:id="@+id/sel"
+            android:id="@+id/quetionsel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/faible_quantit_de_sel"
@@ -143,9 +143,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/zsucre">
+        android:id="@+id/zonesucre">
         <TextView
-            android:id="@+id/sucre"
+            android:id="@+id/quetionsucre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/faible_quantit_de_sucre"
@@ -180,9 +180,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/zgras">
+        android:id="@+id/zonegras">
         <TextView
-            android:id="@+id/gras"
+            android:id="@+id/quetiongras"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/faible_quantit_d_acide_gras_satur_e"
