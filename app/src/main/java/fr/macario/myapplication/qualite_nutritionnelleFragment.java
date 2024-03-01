@@ -213,4 +213,10 @@ public class qualite_nutritionnelleFragment extends Fragment {
             }
         });
     }
+
+    public int getBonnequal() {return Bonnequal;}
+    public int getFaibleQuantMatiereGrasse() {return faibleQuantMatiereGrasse;}
+    public int getQuantAcide() {return quantAcide;}
+    public int getQuantSel() {return quantSel;}
+    public int getQuantSucre() {return quantSucre;}
 }
