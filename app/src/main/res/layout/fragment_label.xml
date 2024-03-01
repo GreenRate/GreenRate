@@ -30,11 +30,11 @@
             android:background="@android:color/transparent"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/zbio"
+        android:id="@+id/zonebio"
         android:layout_width="match_parent"
         android:layout_height="100dp">
         <TextView
-            android:id="@+id/bio"
+            android:id="@+id/quetionbio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/bio"
@@ -67,11 +67,11 @@
             android:layout_centerVertical="true" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/zequitable"
+        android:id="@+id/zoneequitable"
         android:layout_width="match_parent"
         android:layout_height="100dp">
         <TextView
-            android:id="@+id/equitable"
+            android:id="@+id/quetionequitable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/commerce_quitable"
