@@ -2,7 +2,7 @@
     <string name="app_name">GreenRate</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="please_tap_your_name">please type your name\n</string>
+    <string name="please_tap_your_name">Taper votre nom\n</string>
     <string name="please_tap_you_password">please type your password</string>
     <string name="log_in">log in\n</string>
     <string name="let_s_play">let\'s play</string>
@@ -52,5 +52,7 @@
     <string name="sans_gluten">Sans gluten :</string>
     <string name="bio">Bio :</string>
     <string name="commerce_quitable">Commerce équitable :</string>
+    <string name="bienvenue_sur_greenrate">Bienvenue sur GreenRate</string>
+    <string name="quel_est_votre_nom">Quel est votre nom ?</string>
     <color name="green">#24CA33</color>
 </resources>
