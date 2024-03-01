@@ -8,7 +8,7 @@
     android:background="@color/white">
 
     <RelativeLayout
-        android:id="@+id/zentetelabel"
+        android:id="@+id/zoneentetelabel"
         android:layout_width="match_parent"
         android:layout_height="100dp">
         <TextView
