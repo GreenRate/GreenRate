@@ -36,7 +36,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:hint="@string/please_tap_your_name"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/ButtonLogin"
