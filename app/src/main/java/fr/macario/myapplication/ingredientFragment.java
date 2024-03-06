@@ -22,6 +22,8 @@ public class ingredientFragment extends Fragment {
     public int vegetarien;
     public int gluten;
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
 
@@ -145,4 +147,8 @@ public class ingredientFragment extends Fragment {
             }
         });
     }
+
+    public int getVegan() {return vegan;}
+    public int getVegetarien() {return vegetarien;}
+    public int getGluten() {return gluten;}
 }
