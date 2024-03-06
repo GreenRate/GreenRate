@@ -1,17 +1,16 @@
 package fr.macario.myapplication;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import fr.macario.myapplication.databinding.FragmentIngredientBinding;
-import fr.macario.myapplication.databinding.FragmentProfilBinding;
 
 public class ingredientFragment extends Fragment {
 
@@ -28,123 +27,93 @@ public class ingredientFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentIngredientBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.backingredient.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
-                fragmentTransaction.commit();
-            }
+        binding.backingredient.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.pasimportantvegan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegan = 0;
+        binding.pasimportantvegan.setOnClickListener(v -> {
+            vegan = 0;
 
-                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.importantvegan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegan = 1;
+        binding.importantvegan.setOnClickListener(v -> {
+            vegan = 1;
 
-                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.obligatoirevegan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegan = 2;
+        binding.obligatoirevegan.setOnClickListener(v -> {
+            vegan = 2;
 
-                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-            }
+            binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
         });
 
-        binding.pasimportantvegetarien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegetarien = 0;
+        binding.pasimportantvegetarien.setOnClickListener(v -> {
+            vegetarien = 0;
 
-                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.importantvegetarien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegetarien = 1;
+        binding.importantvegetarien.setOnClickListener(v -> {
+            vegetarien = 1;
 
-                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.obligatoirevegetarien.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                vegetarien = 2;
+        binding.obligatoirevegetarien.setOnClickListener(v -> {
+            vegetarien = 2;
 
-                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-            }
+            binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
         });
 
-        binding.pasimportantgluten.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gluten = 0;
+        binding.pasimportantgluten.setOnClickListener(v -> {
+            gluten = 0;
 
-                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.importantgluten.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gluten = 1;
+        binding.importantgluten.setOnClickListener(v -> {
+            gluten = 1;
 
-                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-            }
+            binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
         });
 
-        binding.obligatoiregluten.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gluten = 2;
+        binding.obligatoiregluten.setOnClickListener(v -> {
+            gluten = 2;
 
-                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
-                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
-            }
+            binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
         });
     }
 

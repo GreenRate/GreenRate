@@ -66,22 +66,18 @@ public class WelcomeFragment extends Fragment {
                     binding.ButtonLogin.setEnabled(!usernameIsEmpty);
                 }
             });
-            binding.ButtonLogin.setOnClickListener(new View.OnClickListener(){
-
-                @Override
-                public void onClick(View v) {
-                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString("userName", userName);
-                    editor.apply();
-                    userName = preferences.getString("userName", "user");
-                    Log.d("userName", "l'utilisateur s'appelle " + preferences.getString("userName", "user"));
-                    FragmentManager fragmentManager = getParentFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    scanerFragment ScanFragment = new scanerFragment();
-                    fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
-                    fragmentTransaction.commit();
-                }
+            binding.ButtonLogin.setOnClickListener(v -> {
+                SharedPreferences preferences1 = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                SharedPreferences.Editor editor = preferences1.edit();
+                editor.putString("userName", userName);
+                editor.apply();
+                userName = preferences1.getString("userName", "user");
+                Log.d("userName", "l'utilisateur s'appelle " + preferences1.getString("userName", "user"));
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                scanerFragment ScanFragment = new scanerFragment();
+                fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
+                fragmentTransaction.commit();
             });
         } else {
             FragmentManager fragmentManager = getParentFragmentManager();

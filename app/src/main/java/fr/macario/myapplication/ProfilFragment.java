@@ -2,6 +2,7 @@ package fr.macario.myapplication;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -27,68 +28,50 @@ public class ProfilFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentProfilBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState){
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
         binding.username.setText(userNameInput);
-        binding.buttonSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("test", userNameInput);
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                SettingFragment settingFragment = new SettingFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, settingFragment);
-                fragmentTransaction.commit();
-            }
+        binding.buttonSettings.setOnClickListener(v -> {
+            Log.d("test", userNameInput);
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            SettingFragment settingFragment = new SettingFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, settingFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.backprofil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                scanerFragment scanerFragment = new scanerFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, scanerFragment);
-                fragmentTransaction.commit();
-            }
+        binding.backprofil.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            scanerFragment scanerFragment = new scanerFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, scanerFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.buttonPrefAlim.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
-                fragmentTransaction.commit();
-            }
+        binding.buttonPrefAlim.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.buttonContribuer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.buttonContribuer.setOnClickListener(v -> {
 
-            }
         });
 
-        binding.buttonContact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.buttonContact.setOnClickListener(v -> {
 
-            }
         });
 
-        binding.buttonPartenaire.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        binding.buttonPartenaire.setOnClickListener(v -> {
 
-            }
         });
     }
 }

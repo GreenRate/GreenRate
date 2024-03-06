@@ -1,18 +1,16 @@
 package fr.macario.myapplication;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
-
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
@@ -30,61 +28,42 @@ public class scanerFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentScanerBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.buttonProfile.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                ProfilFragment profileFragment = new ProfilFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, profileFragment);
-                fragmentTransaction.commit();
-            }
+        binding.buttonProfile.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            ProfilFragment profileFragment = new ProfilFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, profileFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.buttonCompare.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                compare_fragment compareFragment = new compare_fragment();
-                fragmentTransaction.add(R.id.fragment_container_view, compareFragment);
-                fragmentTransaction.commit();
-            }
+        binding.buttonCompare.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            compare_fragment compareFragment = new compare_fragment();
+            fragmentTransaction.add(R.id.fragment_container_view, compareFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.buttonList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                HistoriqueFragment historiqueFragment = new HistoriqueFragment();
-                fragmentTransaction.add(R.id.fragment_container_view, historiqueFragment);
-                fragmentTransaction.commit();
-            }
+        binding.buttonList.setOnClickListener(v -> {
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            HistoriqueFragment historiqueFragment = new HistoriqueFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, historiqueFragment);
+            fragmentTransaction.commit();
         });
 
-        binding.buttonClassement.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-            }
+        binding.buttonClassement.setOnClickListener(v -> {
         });
 
-        binding.buttonScann.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                scanCode();
-            }
-        });
+        binding.buttonScann.setOnClickListener(v -> scanCode());
     }
 
     private void scanCode() {
@@ -101,12 +80,7 @@ public class scanerFragment extends Fragment {
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle("Result");
             builder.setMessage(result.getContents());
-            builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInteface, int which) {
-                    dialogInteface.dismiss();
-                }
-            }).show();
+            builder.setPositiveButton("Ok", (dialogInteface, which) -> dialogInteface.dismiss()).show();
         }
     });
 }
