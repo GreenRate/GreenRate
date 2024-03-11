@@ -54,5 +54,6 @@
     <string name="commerce_quitable">Commerce équitable :</string>
     <string name="bienvenue_sur_greenrate">Bienvenue sur GreenRate</string>
     <string name="quel_est_votre_nom">Quel est votre nom ?</string>
+    <string name="scan">Scan</string>
     <color name="green">#24CA33</color>
 </resources>
