@@ -81,7 +81,7 @@
             android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantmatiereqrasse"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/pas_important"
@@ -118,7 +118,7 @@
             android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantsel"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/pas_important"
@@ -155,7 +155,7 @@
             android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantsucre"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/pas_important"
@@ -192,7 +192,7 @@
             android:layout_marginStart="20sp" />
         <Button
             android:id="@+id/pasimportantgras"
-            android:layout_width="100dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/pas_important"
