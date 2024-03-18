@@ -14,8 +14,8 @@
 
         <ImageButton
             android:id="@+id/button_profile"
-            android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_width="300px"
+            android:layout_height="300px"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/profil"
@@ -24,8 +24,8 @@
 
         <ImageButton
             android:id="@+id/button_list"
-            android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_width="300px"
+            android:layout_height="300px"
             android:layout_marginStart="330dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/liste"
@@ -45,12 +45,12 @@
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="30sp"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
+            android:background="@android:color/transparent"
             android:text="@string/scan" />
 
     </RelativeLayout>
@@ -58,12 +58,12 @@
         android:id="@+id/bottompage"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="550dp">
+        android:layout_alignParentBottom="true">
 
         <ImageButton
             android:id="@+id/button_compare"
-            android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_width="300px"
+            android:layout_height="300px"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:src="@drawable/balance"
@@ -72,8 +72,8 @@
 
         <ImageButton
             android:id="@+id/button_classement"
-            android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_width="300px"
+            android:layout_height="300px"
             android:layout_marginTop="20dp"
             android:layout_marginStart="330dp"
             android:src="@drawable/podium"
