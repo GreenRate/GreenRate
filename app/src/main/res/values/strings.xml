@@ -56,5 +56,6 @@
     <string name="quel_est_votre_nom">Quel est votre nom ?</string>
     <string name="scan">Scan</string>
     <string name="start">Start</string>
+    <string name="hello_greenrate">Bienvenue sur GreenRate !</string>
     <color name="green">#24CA33</color>
 </resources>
