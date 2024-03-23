@@ -31,6 +31,7 @@ public class HistoriqueFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.backhistorique.setOnClickListener(v -> {
+            binding.backhistorique.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             scanerFragment scanerFragment = new scanerFragment();

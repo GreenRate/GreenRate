@@ -33,6 +33,7 @@ public class SettingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.backsetting.setOnClickListener(v -> {
+            binding.backsetting.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             ProfilFragment profilFragment = new ProfilFragment();

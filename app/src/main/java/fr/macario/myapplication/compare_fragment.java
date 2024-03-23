@@ -32,6 +32,7 @@ public class compare_fragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.backcompare.setOnClickListener(v -> {
+            binding.backcompare.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             scanerFragment scanerFragment = new scanerFragment();
