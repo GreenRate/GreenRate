@@ -43,14 +43,14 @@
           android:layout_marginStart="20sp" />
       <Button
           android:id="@+id/pasimportantvegan"
-          android:layout_width="100dp"
+          android:layout_width="150dp"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/pas_important"
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/importantvegan"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/important"
@@ -58,7 +58,7 @@
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/obligatoirevegan"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"
@@ -80,14 +80,14 @@
           android:layout_marginStart="20sp" />
       <Button
           android:id="@+id/pasimportantvegetarien"
-          android:layout_width="100dp"
+          android:layout_width="150dp"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/pas_important"
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/importantvegetarien"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/important"
@@ -95,7 +95,7 @@
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/obligatoirevegetarien"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"
@@ -117,14 +117,14 @@
           android:layout_marginStart="20sp" />
       <Button
           android:id="@+id/pasimportantgluten"
-          android:layout_width="100dp"
+          android:layout_width="150dp"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/pas_important"
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/importantgluten"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/important"
@@ -132,7 +132,7 @@
           android:layout_centerVertical="true" />
       <Button
           android:id="@+id/obligatoiregluten"
-          android:layout_width="100dp"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:background="@android:color/transparent"
           android:text="@string/obligatoire"

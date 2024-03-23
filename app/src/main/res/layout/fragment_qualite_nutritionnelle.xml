@@ -51,7 +51,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/importantqualiteenutritionnelle"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/important"
@@ -59,7 +59,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/obligatoirequaliteenutritionnelle"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/obligatoire"
@@ -88,7 +88,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/importantmatiereqrasse"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/important"
@@ -96,7 +96,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/obligatoirematiereqrasse"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/obligatoire"
@@ -125,7 +125,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/importantsel"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/important"
@@ -133,7 +133,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/obligatoiresel"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/obligatoire"
@@ -162,7 +162,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/importantsucre"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/important"
@@ -170,7 +170,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/obligatoiresucre"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/obligatoire"
@@ -199,7 +199,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/importantgras"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/important"
@@ -207,7 +207,7 @@
             android:layout_centerVertical="true" />
         <Button
             android:id="@+id/obligatoiregras"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             android:text="@string/obligatoire"
