@@ -40,6 +40,8 @@ public class scanerFragment extends Fragment {
             binding.buttonProfile.setEnabled(false);
             binding.buttonCompare.setEnabled(false);
             binding.buttonList.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonScann.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             ProfilFragment profileFragment = new ProfilFragment();
@@ -51,6 +53,8 @@ public class scanerFragment extends Fragment {
             binding.buttonProfile.setEnabled(false);
             binding.buttonCompare.setEnabled(false);
             binding.buttonList.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonScann.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             compare_fragment compareFragment = new compare_fragment();
@@ -62,6 +66,8 @@ public class scanerFragment extends Fragment {
             binding.buttonProfile.setEnabled(false);
             binding.buttonCompare.setEnabled(false);
             binding.buttonList.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonScann.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             HistoriqueFragment historiqueFragment = new HistoriqueFragment();
