@@ -1,6 +1,8 @@
 package fr.macario.myapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +38,9 @@ public class ingredientFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        SharedPreferences.Editor editor = preferences.edit();
+
         binding.backingredient.setOnClickListener(v -> {
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -50,6 +55,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("vegan", vegan);
+            editor.apply();
         });
 
         binding.importantvegan.setOnClickListener(v -> {
@@ -58,6 +65,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("vegan", vegan);
+            editor.apply();
         });
 
         binding.obligatoirevegan.setOnClickListener(v -> {
@@ -66,6 +75,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            editor.putInt("vegan", vegan);
+            editor.apply();
         });
 
         binding.pasimportantvegetarien.setOnClickListener(v -> {
@@ -74,6 +85,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("vegetarien", vegetarien);
+            editor.apply();
         });
 
         binding.importantvegetarien.setOnClickListener(v -> {
@@ -82,6 +95,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("vegetarien", vegetarien);
+            editor.apply();
         });
 
         binding.obligatoirevegetarien.setOnClickListener(v -> {
@@ -90,6 +105,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            editor.putInt("vegetarien", vegetarien);
+            editor.apply();
         });
 
         binding.pasimportantgluten.setOnClickListener(v -> {
@@ -98,6 +115,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("gluten", gluten);
+            editor.apply();
         });
 
         binding.importantgluten.setOnClickListener(v -> {
@@ -106,6 +125,8 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("gluten", gluten);
+            editor.apply();
         });
 
         binding.obligatoiregluten.setOnClickListener(v -> {
@@ -114,7 +135,77 @@ public class ingredientFragment extends Fragment {
             binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            editor.putInt("gluten", gluten);
+            editor.apply();
         });
+
+        switch (preferences.getInt("vegan", -1)) {
+            case 0 :
+                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 1 :
+                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 2 :
+                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                break;
+            case -1 :
+                binding.pasimportantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.importantvegan.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.obligatoirevegan.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                break;
+        }
+
+        switch (preferences.getInt("vegetarien", -1)) {
+            case 0 :
+                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 1 :
+                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 2 :
+                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                break;
+            case -1 :
+                binding.pasimportantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.importantvegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.obligatoirevegetarien.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                break;
+        }
+
+        switch (preferences.getInt("gluten", -1)){
+            case 0 :
+                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 1 :
+                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 2 :
+                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                break;
+            case -1 :
+                binding.pasimportantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.importantgluten.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.obligatoiregluten.setTextAppearance(getContext(), android.R.style.TextAppearance);
+        }
     }
 
     public int getVegan() {return vegan;}

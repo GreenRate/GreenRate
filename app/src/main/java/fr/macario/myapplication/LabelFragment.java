@@ -1,6 +1,8 @@
 package fr.macario.myapplication;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +36,10 @@ public class LabelFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        SharedPreferences.Editor editor = preferences.edit();
+
+
         binding.backlabel.setOnClickListener(v -> {
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -48,6 +54,8 @@ public class LabelFragment extends Fragment {
             binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("bio", bio);
+            editor.apply();
         });
 
         binding.importantbio.setOnClickListener(v -> {
@@ -56,6 +64,8 @@ public class LabelFragment extends Fragment {
             binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("bio", bio);
+            editor.apply();
         });
 
         binding.obligatoirebio.setOnClickListener(v -> {
@@ -64,6 +74,8 @@ public class LabelFragment extends Fragment {
             binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            editor.putInt("bio", bio);
+            editor.apply();
         });
 
         binding.pasimportantequitable.setOnClickListener(v -> {
@@ -72,6 +84,8 @@ public class LabelFragment extends Fragment {
             binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("commerceEquit", commerceEquit);
+            editor.apply();
         });
 
         binding.importantequitable.setOnClickListener(v -> {
@@ -80,6 +94,8 @@ public class LabelFragment extends Fragment {
             binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
             binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+            editor.putInt("commerceEquit", commerceEquit);
+            editor.apply();
         });
 
         binding.obligatoireequitable.setOnClickListener(v -> {
@@ -88,6 +104,55 @@ public class LabelFragment extends Fragment {
             binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
             binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+            editor.putInt("commerceEquit", commerceEquit);
+            editor.apply();
         });
+
+        switch (preferences.getInt("bio", -1)){
+            case 0 :
+                binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 1 :
+                binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 2 :
+                binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                break;
+            case -1 :
+                binding.pasimportantbio.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.importantbio.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.obligatoirebio.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                break;
+        }
+
+        switch (preferences.getInt("commerceEquit", -1)){
+            case 0 :
+                binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 1 :
+                binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                break;
+            case 2 :
+                binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Small);
+                binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance_Large);
+                break;
+            case -1 :
+                binding.pasimportantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.importantequitable.setTextAppearance(getContext(), android.R.style.TextAppearance);
+                binding.obligatoireequitable.setTextAppearance(getContext(), android.R.style.TextAppearance);
+        }
     }
+
+
 }

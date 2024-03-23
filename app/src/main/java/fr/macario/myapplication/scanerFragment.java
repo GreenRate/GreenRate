@@ -37,6 +37,9 @@ public class scanerFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.buttonProfile.setOnClickListener(v -> {
+            binding.buttonProfile.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonList.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             ProfilFragment profileFragment = new ProfilFragment();
@@ -45,6 +48,9 @@ public class scanerFragment extends Fragment {
         });
 
         binding.buttonCompare.setOnClickListener(v -> {
+            binding.buttonProfile.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonList.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             compare_fragment compareFragment = new compare_fragment();
@@ -53,6 +59,9 @@ public class scanerFragment extends Fragment {
         });
 
         binding.buttonList.setOnClickListener(v -> {
+            binding.buttonProfile.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonList.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             HistoriqueFragment historiqueFragment = new HistoriqueFragment();
