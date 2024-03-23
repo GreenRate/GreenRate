@@ -42,6 +42,7 @@ public class ingredientFragment extends Fragment {
         SharedPreferences.Editor editor = preferences.edit();
 
         binding.backingredient.setOnClickListener(v -> {
+            binding.pasimportantvegan.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();

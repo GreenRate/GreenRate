@@ -38,7 +38,11 @@ public class ProfilFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         binding.username.setText(userNameInput);
         binding.buttonSettings.setOnClickListener(v -> {
-            Log.d("test", userNameInput);
+            binding.backprofil.setEnabled(false);
+            binding.buttonSettings.setEnabled(false);
+            binding.buttonContact.setEnabled(false);
+            binding.buttonPartenaire.setEnabled(false);
+            binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             SettingFragment settingFragment = new SettingFragment();
@@ -47,6 +51,11 @@ public class ProfilFragment extends Fragment {
         });
 
         binding.backprofil.setOnClickListener(v -> {
+            binding.backprofil.setEnabled(false);
+            binding.buttonSettings.setEnabled(false);
+            binding.buttonContact.setEnabled(false);
+            binding.buttonPartenaire.setEnabled(false);
+            binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             scanerFragment scanerFragment = new scanerFragment();
@@ -55,6 +64,11 @@ public class ProfilFragment extends Fragment {
         });
 
         binding.buttonPrefAlim.setOnClickListener(v -> {
+            binding.backprofil.setEnabled(false);
+            binding.buttonSettings.setEnabled(false);
+            binding.buttonContact.setEnabled(false);
+            binding.buttonPartenaire.setEnabled(false);
+            binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             PrefAlimentairesFragment prefAlimentairesFragment = new PrefAlimentairesFragment();
