@@ -26,11 +26,12 @@
             android:id="@+id/button_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="300dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/liste"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage" />
+            tools:ignore="PxUsage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -97,10 +98,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="300dp"
             android:src="@drawable/podium"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage" />
+            tools:ignore="PxUsage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
 
     </RelativeLayout>
 </RelativeLayout>
