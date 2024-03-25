@@ -41,7 +41,6 @@ public class ProfilFragment extends Fragment {
             binding.backprofil.setEnabled(false);
             binding.buttonSettings.setEnabled(false);
             binding.buttonContact.setEnabled(false);
-            binding.buttonPartenaire.setEnabled(false);
             binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -54,7 +53,6 @@ public class ProfilFragment extends Fragment {
             binding.backprofil.setEnabled(false);
             binding.buttonSettings.setEnabled(false);
             binding.buttonContact.setEnabled(false);
-            binding.buttonPartenaire.setEnabled(false);
             binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -67,7 +65,6 @@ public class ProfilFragment extends Fragment {
             binding.backprofil.setEnabled(false);
             binding.buttonSettings.setEnabled(false);
             binding.buttonContact.setEnabled(false);
-            binding.buttonPartenaire.setEnabled(false);
             binding.buttonPrefAlim.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -76,16 +73,10 @@ public class ProfilFragment extends Fragment {
             fragmentTransaction.commit();
         });
 
-        binding.buttonContribuer.setOnClickListener(v -> {
-
-        });
 
         binding.buttonContact.setOnClickListener(v -> {
 
         });
 
-        binding.buttonPartenaire.setOnClickListener(v -> {
-
-        });
     }
 }
