@@ -70,10 +70,10 @@
             android:layout_height="wrap_content"
             android:text="@string/hello_greenrate"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/logo"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp" />
 
 
     </RelativeLayout>
@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:src="@drawable/balance"
+            android:src="@drawable/compare"
             android:background="@android:color/transparent"
             tools:ignore="PxUsage" />
 
@@ -98,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:src="@drawable/podium"
+            android:src="@drawable/loupe"
             android:background="@android:color/transparent"
             tools:ignore="PxUsage"
             android:layout_alignParentEnd="true"
