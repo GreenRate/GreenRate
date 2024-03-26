@@ -7,7 +7,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nouscontactez"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -25,5 +25,17 @@
         android:background="@android:color/transparent"
         android:src="@drawable/backfleche"
         tools:ignore="PxUsage"/>
+    <ImageView
+        android:id="@+id/logoinsta"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/instagramlogo"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/nominsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom_insta"/>
 
 </FrameLayout>

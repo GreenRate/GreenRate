@@ -57,5 +57,6 @@
     <string name="scan">Scan</string>
     <string name="start">Start</string>
     <string name="hello_greenrate">Bienvenue sur GreenRate !</string>
+    <string name="nom_insta"> "@greenrate_officiel" </string>
     <color name="green">#24CA33</color>
 </resources>
