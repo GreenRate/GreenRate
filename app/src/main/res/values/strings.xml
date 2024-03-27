@@ -64,6 +64,7 @@
     <string name="rechercher">Rechercher</string>
     <string name="nom_du_produit">Nom du produit...</string>
     <string name="product">product</string>
+    <string name="prixproduct">"  prix product"</string>
     <color name="green">#24CA33</color>
 
 </resources>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductFragment">
+    tools:context=".ProductFragment"
+    android:orientation="horizontal">
     <RelativeLayout
         android:id="@+id/enteteproduct"
         android:layout_width="match_parent"
@@ -26,6 +27,65 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="25dp"/>
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zoneimageproduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:id="@+id/imagepruduct"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/mail"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/borderimage"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zonenutriscore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nutriscore"
+            android:layout_centerInParent="true"/>        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zoneecoscore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="400dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/p29734154d5052473g"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zoneprix"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="500dp">
+        <TextView
+            android:id="@+id/prx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prix"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prixproduct"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/prx"/>
+
+    </RelativeLayout>
 
 
-</LinearLayout>
+</FrameLayout>
