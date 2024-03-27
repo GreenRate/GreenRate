@@ -6,6 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.json.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import java.net.URL;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,6 +27,8 @@ import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanOptions;
 
 import fr.macario.myapplication.databinding.FragmentScanerBinding;
+
+
 
 public class scanerFragment extends Fragment {
 
@@ -36,6 +49,9 @@ public class scanerFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+
+
         binding.buttonProfile.setOnClickListener(v -> {
             binding.buttonProfile.setEnabled(false);
             binding.buttonCompare.setEnabled(false);
@@ -48,6 +64,9 @@ public class scanerFragment extends Fragment {
             fragmentTransaction.add(R.id.fragment_container_view, profileFragment);
             fragmentTransaction.commit();
         });
+
+
+
 
         binding.buttonCompare.setOnClickListener(v -> {
             binding.buttonProfile.setEnabled(false);
@@ -82,6 +101,7 @@ public class scanerFragment extends Fragment {
     }
 
     private void scanCode() {
+        RunExternal.launch("test.exe");
         ScanOptions options = new ScanOptions();
         options.setPrompt("Volume up to flash on");
         options.setBeepEnabled(true);
@@ -92,6 +112,11 @@ public class scanerFragment extends Fragment {
 
     ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
         if (result.getContents() !=null) {
+            try {
+                URL url = new URL("https://world.openfoodfacts.org/api/v0/product/" + result.getContents() + ".json");
+            } catch (MalformedURLException e) {
+                throw new RuntimeException(e);
+            }
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle("Result");
             builder.setMessage(result.getContents());
@@ -99,3 +124,4 @@ public class scanerFragment extends Fragment {
         }
     });
 }
+
