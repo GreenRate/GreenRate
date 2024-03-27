@@ -111,7 +111,6 @@ public class scanerFragment extends Fragment {
 
         binding.buttonScann.setOnClickListener(v -> scanCode());
 
-        System.out.println(url);
 
     }
 
@@ -130,11 +129,7 @@ public class scanerFragment extends Fragment {
 
     ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
         if (result.getContents() !=null) {
-            try {
-                url = new url("https://world.openfoodfacts.org/api/v0/product/" + result.getContents() + ".json");
-            } catch (MalformedURLException e) {
-                throw new RuntimeException(e);
-            }
+
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
             builder.setTitle("Result");
             builder.setMessage(result.getContents());
