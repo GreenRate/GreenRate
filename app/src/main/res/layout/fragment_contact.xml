@@ -1,41 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/nouscontactez"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="@color/black"
-        android:text="@string/nous_contacter" />
-    <ImageButton
-        android:id="@+id/backsetting"
-        android:layout_width="150px"
-        android:layout_height="150px"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/backfleche"
-        tools:ignore="PxUsage"/>
-    <ImageView
-        android:id="@+id/logoinsta"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/instagramlogo"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="20dp"/>
-    <TextView
-        android:id="@+id/nominsta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nom_insta"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/entetecontact">
+        <TextView
+            android:id="@+id/nouscontactez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:text="@string/nous_contacter" />
+        <ImageButton
+            android:id="@+id/backsetting"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backfleche"
+            tools:ignore="PxUsage"/>
 
-</FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zoneinsta"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:id="@+id/logoinsta"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/instagramlogo"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20sp"/>
+        <TextView
+            android:id="@+id/nominsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nom_insta"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/notreinsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notre_compte_instagram"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zonemail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignTop="@id/zoneinsta">
+        <TextView
+            android:id="@+id/sendmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nous_envoyer_une_mail"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/green_rate_app_gmail_com"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/logomail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mail"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

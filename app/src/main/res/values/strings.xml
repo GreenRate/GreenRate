@@ -58,5 +58,8 @@
     <string name="start">Start</string>
     <string name="hello_greenrate">Bienvenue sur GreenRate !</string>
     <string name="nom_insta"> "@greenrate_officiel" </string>
+    <string name="nous_envoyer_une_mail">Nous envoyer une mail</string>
+    <string name="green_rate_app_gmail_com">green.rate.app@gmail.com</string>
+    <string name="notre_compte_instagram">Notre compte instagram</string>
     <color name="green">#24CA33</color>
 </resources>
