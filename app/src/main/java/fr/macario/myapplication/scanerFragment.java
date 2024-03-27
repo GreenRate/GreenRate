@@ -40,7 +40,7 @@ import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
 public class scanerFragment extends Fragment {
 
-    URL url;
+
     OkHttpClient client = new OkHttpClient();
 
 
