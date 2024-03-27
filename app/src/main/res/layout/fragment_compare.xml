@@ -8,197 +8,9 @@
     android:background="@color/white">
 
     <RelativeLayout
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="181dp">
-
-        <Button
-            android:id="@+id/buttonproduit1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:text="" />
-        <TextView
-            android:id="@+id/nomproduit1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="@string/produit_1"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:id="@+id/imageproduit1"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@id/nomproduit1"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/start" />
-
-        <ImageView
-            android:id="@+id/nutri1"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@id/imageproduit1"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/nutriscore" />
-
-        <ImageView
-            android:id="@+id/eco1"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_below="@id/nutri1"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/p29734154d5052473g" />
-
-        <TextView
-            android:id="@+id/carbone1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/eco1"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:text="@string/bilan_carbone"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/valcarbone1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/eco1"
-            android:layout_alignStart="@id/carbone1"
-            android:layout_alignLeft="@id/carbone1"
-            android:layout_marginHorizontal="130dp"
-            android:text="@string/carbone1"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/prix1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/carbone1"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:text="@string/prix"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/valprix1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/carbone1"
-            android:layout_alignStart="@id/prix1"
-            android:layout_alignLeft="@id/prix1"
-            android:layout_marginHorizontal="130dp"
-            android:text="@string/prix1"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="202dp"
-        android:layout_height="600dp"
-        android:layout_marginHorizontal="209dp"
-        android:layout_marginTop="181dp">
-
-        <Button
-            android:id="@+id/buttonproduit2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/nomproduit2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="@string/produit_2"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:id="@+id/imageproduit2"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@id/nomproduit2"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/start" />
-
-        <ImageView
-            android:id="@+id/nutri2"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@id/imageproduit2"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/nutriscore" />
-
-        <ImageView
-            android:id="@+id/eco2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_below="@id/nutri2"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/p29734154d5052473g" />
-
-        <TextView
-            android:id="@+id/carbone2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/eco2"
-            android:text="@string/bilan_carbone"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/valcarbone2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/eco2"
-            android:layout_alignStart="@id/carbone2"
-            android:layout_alignLeft="@id/carbone2"
-            android:layout_marginHorizontal="130dp"
-            android:text="@string/carbone2"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/prix2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/carbone2"
-            android:text="@string/prix"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/valprix2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/valcarbone2"
-            android:layout_alignStart="@id/prix2"
-            android:layout_alignLeft="@id/prix2"
-            android:layout_marginHorizontal="130dp"
-            android:text="@string/prix2"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
+        android:id="@+id/entetecompare"
         android:layout_width="match_parent"
-        android:layout_height="181dp">
-
-
+        android:layout_height="100dp">
         <TextView
             android:id="@+id/nompagecompa"
             android:layout_width="wrap_content"
@@ -214,14 +26,184 @@
             android:id="@+id/backcompare"
             android:layout_width="150px"
             android:layout_height="150px"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
             android:background="@android:color/transparent"
             android:src="@drawable/backfleche"
             tools:ignore="PxUsage" />
 
     </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/entetecompare"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/nomproduit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/produit_1"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:id="@+id/imageproduit1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/start"
+                android:layout_below="@id/nomproduit1"/>
+            <ImageView
+                android:id="@+id/nutri1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/imageproduit1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nutriscore" />
+
+            <ImageView
+                android:id="@+id/eco1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@id/nutri1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/p29734154d5052473g" />
+
+            <TextView
+                android:id="@+id/carbone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eco1"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/bilan_carbone"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valcarbone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eco1"
+                android:layout_alignStart="@id/carbone1"
+                android:layout_alignLeft="@id/carbone1"
+                android:layout_marginHorizontal="130dp"
+                android:text="@string/carbone1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/prix1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carbone1"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/prix"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valprix1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carbone1"
+                android:layout_alignStart="@id/prix1"
+                android:layout_alignLeft="@id/prix1"
+                android:layout_marginHorizontal="130dp"
+                android:text="@string/prix1"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1">
+
+            <TextView
+                android:id="@+id/nomproduit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/produit_2"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageproduit2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/nomproduit2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/nutri2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/imageproduit2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nutriscore" />
+
+            <ImageView
+                android:id="@+id/eco2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@id/nutri2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/p29734154d5052473g" />
+
+            <TextView
+                android:id="@+id/carbone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eco2"
+                android:text="@string/bilan_carbone"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valcarbone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eco2"
+                android:layout_alignStart="@id/carbone2"
+                android:layout_alignLeft="@id/carbone2"
+                android:layout_marginHorizontal="130dp"
+                android:text="@string/carbone2"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/prix2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/carbone2"
+                android:text="@string/prix"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valprix2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/valcarbone2"
+                android:layout_alignStart="@id/prix2"
+                android:layout_alignLeft="@id/prix2"
+                android:layout_marginHorizontal="130dp"
+                android:text="@string/prix2"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
 
 
+    </GridLayout>
 </RelativeLayout>
