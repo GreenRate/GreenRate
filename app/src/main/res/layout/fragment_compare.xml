@@ -80,7 +80,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/eco1"
                 android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
                 android:text="@string/bilan_carbone"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -91,7 +90,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/eco1"
                 android:layout_alignStart="@id/carbone1"
-                android:layout_alignLeft="@id/carbone1"
                 android:layout_marginHorizontal="130dp"
                 android:text="@string/carbone1"
                 android:textColor="@color/black"
