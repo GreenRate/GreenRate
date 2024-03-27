@@ -63,6 +63,7 @@
     <string name="notre_compte_instagram">Notre compte instagram</string>
     <string name="rechercher">Rechercher</string>
     <string name="nom_du_produit">Nom du produit...</string>
+    <string name="product">product</string>
     <color name="green">#24CA33</color>
 
 </resources>
