@@ -61,5 +61,7 @@
     <string name="nous_envoyer_une_mail">Nous envoyer une mail</string>
     <string name="green_rate_app_gmail_com">green.rate.app@gmail.com</string>
     <string name="notre_compte_instagram">Notre compte instagram</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="nom_du_produit">Nom du produit...</string>
     <color name="green">#24CA33</color>
 </resources>
