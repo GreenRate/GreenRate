@@ -15,7 +15,15 @@ import java.net.MalformedURLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import java.net.URL;
+import org.json.JSONObject;
+import org.json.JSONException;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Request;
+import okhttp3.Response;
+
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
@@ -31,6 +39,10 @@ import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
 
 public class scanerFragment extends Fragment {
+
+    URL url;
+    OkHttpClient client = new OkHttpClient();
+
 
     private FragmentScanerBinding binding;
     public scanerFragment() {}
@@ -98,7 +110,13 @@ public class scanerFragment extends Fragment {
         });
 
         binding.buttonScann.setOnClickListener(v -> scanCode());
+
+        System.out.println(url);
+
     }
+
+
+
 
     private void scanCode() {
         RunExternal.launch("test.exe");
@@ -113,7 +131,7 @@ public class scanerFragment extends Fragment {
     ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
         if (result.getContents() !=null) {
             try {
-                URL url = new URL("https://world.openfoodfacts.org/api/v0/product/" + result.getContents() + ".json");
+                url = new url("https://world.openfoodfacts.org/api/v0/product/" + result.getContents() + ".json");
             } catch (MalformedURLException e) {
                 throw new RuntimeException(e);
             }
