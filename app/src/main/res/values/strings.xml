@@ -64,4 +64,5 @@
     <string name="rechercher">Rechercher</string>
     <string name="nom_du_produit">Nom du produit...</string>
     <color name="green">#24CA33</color>
+
 </resources>
