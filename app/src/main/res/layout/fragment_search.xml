@@ -43,7 +43,7 @@
             android:background="@drawable/border_buton"
             android:textSize="23sp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp" />
         <ImageButton
             android:id="@+id/Searchbuton"
             android:layout_width="wrap_content"
