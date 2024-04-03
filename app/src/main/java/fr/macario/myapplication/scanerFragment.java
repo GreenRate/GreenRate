@@ -53,7 +53,6 @@ public class scanerFragment extends Fragment {
             ProductFragment productFragment = new ProductFragment();
             fragmentTransaction.add(R.id.fragment_container_view, productFragment);
             fragmentTransaction.commit();
-            barcodeValue = result.getContents();
         }
     });
 
