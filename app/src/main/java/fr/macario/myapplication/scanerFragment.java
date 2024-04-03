@@ -6,15 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.json.*;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import org.json.JSONObject;
 import org.json.JSONException;
 
@@ -24,6 +15,8 @@ import okhttp3.Callback;
 import okhttp3.Request;
 import okhttp3.Response;
 
+import java.net.*;
+import java.io.*;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
@@ -36,16 +29,43 @@ import com.journeyapps.barcodescanner.ScanOptions;
 
 import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
-
+import java.io.IOException;
 
 public class scanerFragment extends Fragment {
 
-
-    OkHttpClient client = new OkHttpClient();
+    private String barcodeValue;
+    private String productName;
 
 
     private FragmentScanerBinding binding;
     public scanerFragment() {}
+
+    ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
+        if (result.getContents() !=null) {
+            binding.buttonProfile.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonList.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonScann.setEnabled(false);
+            barcodeValue = result.getContents();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            ProductFragment productFragment = new ProductFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, productFragment);
+            fragmentTransaction.commit();
+            barcodeValue = result.getContents();
+        }
+    });
+
+    private void scanCode() {
+        ScanOptions options = new ScanOptions();
+        options.setPrompt("Volume up to flash on");
+        options.setBeepEnabled(true);
+        options.setOrientationLocked(true);
+        options.setCaptureActivity(CaptureAct.class);
+        barLauncher.launch(options);
+    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,8 +82,6 @@ public class scanerFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-
         binding.buttonProfile.setOnClickListener(v -> {
             binding.buttonProfile.setEnabled(false);
             binding.buttonCompare.setEnabled(false);
@@ -76,9 +94,6 @@ public class scanerFragment extends Fragment {
             fragmentTransaction.add(R.id.fragment_container_view, profileFragment);
             fragmentTransaction.commit();
         });
-
-
-
 
         binding.buttonCompare.setOnClickListener(v -> {
             binding.buttonProfile.setEnabled(false);
@@ -106,35 +121,14 @@ public class scanerFragment extends Fragment {
             fragmentTransaction.commit();
         });
 
-        binding.buttonClassement.setOnClickListener(v -> {
-        });
-
+        binding.buttonClassement.setOnClickListener(v -> {});
         binding.buttonScann.setOnClickListener(v -> scanCode());
-
-
     }
 
 
 
-
-    private void scanCode() {
-        RunExternal.launch("test.exe");
-        ScanOptions options = new ScanOptions();
-        options.setPrompt("Volume up to flash on");
-        options.setBeepEnabled(true);
-        options.setOrientationLocked(true);
-        options.setCaptureActivity(CaptureAct.class);
-        barLauncher.launch(options);
+    public String getBarcodeValue() {
+        return barcodeValue;
     }
-
-    ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), result -> {
-        if (result.getContents() !=null) {
-
-            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setTitle("Result");
-            builder.setMessage(result.getContents());
-            builder.setPositiveButton("Ok", (dialogInteface, which) -> dialogInteface.dismiss()).show();
-        }
-    });
 }
 

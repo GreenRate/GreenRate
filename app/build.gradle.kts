@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "fr.macario.myapplication"
-        minSdk = 19
+        minSdk = 21
         targetSdk = 34
         versionCode = 2
         versionName = "1.1"
@@ -49,6 +49,10 @@ dependencies {
     implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
     implementation ("com.google.android.material:material:1.11.0")
     implementation ("com.squareup.okhttp3:okhttp:4.12.0")
+    dependencies {
+        val multidex_version = "2.0.1"
+        implementation("androidx.multidex:multidex:$multidex_version")
+    }
 
 
 }
