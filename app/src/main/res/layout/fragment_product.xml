@@ -50,7 +50,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:src="@drawable/nutriscore"
+            android:src="@drawable/nutriscored"
             android:layout_centerInParent="true"/>        
     </RelativeLayout>
     <RelativeLayout

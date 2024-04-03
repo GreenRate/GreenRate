@@ -64,7 +64,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscore" />
+                android:src="@drawable/nutriscorea" />
 
             <ImageView
                 android:id="@+id/eco1"
@@ -149,7 +149,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscore" />
+                android:src="@drawable/nutriscoree" />
 
             <ImageView
                 android:id="@+id/eco2"
