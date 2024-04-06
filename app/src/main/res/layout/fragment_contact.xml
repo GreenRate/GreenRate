@@ -8,10 +8,8 @@
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/entetecontact">
+        android:layout_height="100dp">
         <TextView
-            android:id="@+id/nouscontactez"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -28,7 +26,8 @@
             android:layout_marginStart="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/backfleche"
-            tools:ignore="PxUsage"/>
+            tools:ignore="ContentDescription,HardcodedText,PxUsage"
+            android:contentDescription="TODO" />
 
     </RelativeLayout>
     <RelativeLayout
@@ -37,14 +36,14 @@
         android:layout_height="150dp"
         android:layout_marginTop="100dp">
         <ImageView
-            android:id="@+id/logoinsta"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/instagramlogo"
             android:layout_centerVertical="true"
-            android:layout_marginStart="20sp"/>
+            android:layout_marginStart="20sp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
         <TextView
-            android:id="@+id/nominsta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nom_insta"
@@ -52,7 +51,6 @@
             android:textSize="20sp"
             android:layout_centerInParent="true"/>
         <TextView
-            android:id="@+id/notreinsta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/notre_compte_instagram"
@@ -61,13 +59,11 @@
             android:layout_marginStart="20dp"/>
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/zonemail"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginTop="150dp"
         android:layout_alignTop="@id/zoneinsta">
         <TextView
-            android:id="@+id/sendmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nous_envoyer_une_mail"
@@ -76,7 +72,6 @@
             android:layout_marginStart="20dp"/>
 
         <TextView
-            android:id="@+id/mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/green_rate_app_gmail_com"
@@ -84,12 +79,13 @@
             android:textSize="20sp"
             android:layout_centerInParent="true" />
         <ImageView
-            android:id="@+id/logomail"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/mail"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="10dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
 
     </RelativeLayout>
 </RelativeLayout>

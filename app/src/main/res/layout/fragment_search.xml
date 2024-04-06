@@ -6,12 +6,10 @@
     tools:context=".SearchFragment">
 
     <RelativeLayout
-        android:id="@+id/entetesearch"
         android:layout_width="match_parent"
         android:layout_height="100dp">
 
         <TextView
-            android:id="@+id/rechercher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -24,17 +22,17 @@
             android:layout_height="wrap_content"
             android:src="@drawable/backfleche"
             android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"/>
+            android:layout_marginStart="20dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/zonerecherche"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="100dp">
 
 
         <EditText
-            android:id="@+id/barSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -43,29 +41,30 @@
             android:background="@drawable/border_buton"
             android:textSize="23sp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp" />
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            tools:ignore="LabelFor,RelativeOverlap" />
         <ImageButton
-            android:id="@+id/Searchbuton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/loupe"
             android:background="@android:color/transparent"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="20dp"/>
+            android:layout_marginEnd="20dp"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/zoneproduit"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="200dp">
         <ScrollView
-            android:id="@+id/scrollproduit"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
 
             <RelativeLayout
-                android:id="@+id/zoneinduviduelproduit"
                 android:layout_width="match_parent"
                 android:layout_height="125dp">
                 <ImageView
@@ -75,7 +74,9 @@
                     android:src="@drawable/logo"
                     android:background="@drawable/borderproduct"
                     android:layout_marginStart="5dp"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
                 <TextView
                     android:id="@+id/nameproduct"
                     android:layout_width="wrap_content"
@@ -94,16 +95,19 @@
                     android:layout_below="@id/nameproduct"
                     android:layout_toEndOf="@id/imageproduit"
                     android:layout_marginTop="5dp"
-                    android:layout_marginStart="5dp"/>
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
                 <ImageView
-                    android:id="@+id/ecoscore"
                     android:layout_width="120dp"
                     android:layout_height="80dp"
                     android:src="@drawable/p29734154d5052473g"
                     android:layout_below="@id/nameproduct"
                     android:layout_toEndOf="@id/nutriscore"
                     android:layout_marginTop="5dp"
-                    android:layout_marginStart="5dp"/>
+                    android:layout_marginStart="5dp"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText" />
             </RelativeLayout>
         </ScrollView>
     </RelativeLayout>

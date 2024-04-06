@@ -8,7 +8,6 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -18,7 +17,6 @@
         android:text="@string/param_tre" />
 
     <TextView
-        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -28,7 +26,6 @@
         android:text="@string/pr_f_rences_alimentaires" />
 
     <TextView
-        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -38,16 +35,16 @@
         android:text="@string/nous_contacter" />
 
     <ImageButton
-        android:id="@+id/profilimage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/profil" />
+        android:src="@drawable/profil"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <Button
-        android:id="@+id/button_settings"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="330dp"
@@ -57,7 +54,6 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
     <Button
-        android:id="@+id/button_pref_alim"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="215dp"
@@ -68,7 +64,6 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button_contact"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="330dp"
@@ -86,7 +81,8 @@
         android:layout_marginTop="10dp"
         android:background="@android:color/transparent"
         android:src="@drawable/backfleche"
-        tools:ignore="PxUsage" />
+        tools:ignore="ContentDescription,HardcodedText,PxUsage"
+        android:contentDescription="TODO" />
     <Button
         android:id="@+id/username"
         android:layout_width="wrap_content"

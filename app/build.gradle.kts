@@ -1,3 +1,5 @@
+@file:Suppress("LocalVariableName", "LocalVariableName", "RedundantSuppression")
+
 plugins {
     id("com.android.application")
 
@@ -42,6 +44,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.android.support:support-annotations:28.0.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    //noinspection GradleDependency
     implementation("androidx.recyclerview:recyclerview:1.3.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

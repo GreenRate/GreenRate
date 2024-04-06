@@ -13,29 +13,28 @@
         android:layout_height="150dp">
 
         <ImageButton
-            android:id="@+id/button_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/profil"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage" />
+            tools:ignore="ContentDescription,HardcodedText,PxUsage"
+            android:contentDescription="TODO" />
 
         <ImageButton
-            android:id="@+id/button_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:src="@drawable/liste"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage"
+            tools:ignore="ContentDescription,HardcodedText,PxUsage"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"/>
+            android:layout_marginEnd="20dp"
+            android:contentDescription="TODO" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/scan"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="150dp"
@@ -65,7 +64,6 @@
             android:layout_below="@id/button_scann"
             android:layout_marginTop="40dp"/>
         <TextView
-            android:id="@+id/txthello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hello_greenrate"
@@ -78,31 +76,30 @@
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/bottompage"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true">
 
         <ImageButton
-            android:id="@+id/button_compare"
             android:layout_width="150px"
             android:layout_height="150px"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:src="@drawable/compare"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage" />
+            tools:ignore="ContentDescription,HardcodedText,PxUsage"
+            android:contentDescription="TODO" />
 
         <ImageButton
-            android:id="@+id/button_classement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:src="@drawable/loupe"
             android:background="@android:color/transparent"
-            tools:ignore="PxUsage"
+            tools:ignore="ContentDescription,HardcodedText,PxUsage"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"/>
+            android:layout_marginEnd="20dp"
+            android:contentDescription="TODO" />
 
     </RelativeLayout>
 </RelativeLayout>

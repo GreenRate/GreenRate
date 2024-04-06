@@ -8,10 +8,8 @@
     android:orientation="vertical">
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="100dp"
-       android:id="@+id/zenteteingredient">
+       android:layout_height="100dp">
       <TextView
-         android:id="@+id/enteteingredient"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
          android:text="@string/ingr_dient"
@@ -26,14 +24,13 @@
           android:layout_marginTop="15dp"
           android:layout_centerVertical="true"
           android:src="@drawable/backfleche"
-          android:background="@android:color/transparent" />
+          android:background="@android:color/transparent"
+          android:importantForAccessibility="no" />
    </RelativeLayout>
    <RelativeLayout
-      android:id="@+id/zvegan"
        android:layout_width="match_parent"
        android:layout_height="100dp">
       <TextView
-          android:id="@+id/vegan"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/vegan"
@@ -66,11 +63,9 @@
           android:layout_centerVertical="true" />
    </RelativeLayout>
    <RelativeLayout
-       android:id="@+id/zvegetarien"
        android:layout_width="match_parent"
        android:layout_height="100dp">
       <TextView
-          android:id="@+id/vegetarien"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/v_g_tarien"
@@ -103,11 +98,9 @@
           android:layout_centerVertical="true" />
    </RelativeLayout>
    <RelativeLayout
-       android:id="@+id/zgluten"
        android:layout_width="match_parent"
        android:layout_height="100dp">
       <TextView
-          android:id="@+id/gluten"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/sans_gluten"

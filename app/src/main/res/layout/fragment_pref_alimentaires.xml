@@ -6,7 +6,6 @@
     tools:context=".PrefAlimentairesFragment"
     android:background="@color/white">
     <TextView
-        android:id="@+id/enteteprefalimentaires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pr_f_rences_alimentaires"
@@ -21,14 +20,14 @@
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
         android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
         android:src="@drawable/backfleche"
-        android:background="@android:color/transparent" />
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
 
 
     <Button
-        android:id="@+id/Qualite_nutritionnelle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/qualit_nutritionnelle"
@@ -36,10 +35,8 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginTop="130dp" />
     <Button
-        android:id="@+id/Qualite_nutritionnellechevron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chevron"
@@ -47,12 +44,10 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="330dp" />
+        android:layout_marginTop="130dp" />
 
 
     <Button
-        android:id="@+id/ingredient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ingredient"
@@ -60,8 +55,7 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginTop="180dp" />
     <Button
         android:id="@+id/ingredientschevron"
         android:layout_width="wrap_content"
@@ -71,12 +65,10 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="330dp" />
+        android:layout_marginTop="180dp" />
 
 
     <Button
-        android:id="@+id/environnement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/environnement"
@@ -84,10 +76,8 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginTop="230dp" />
     <Button
-        android:id="@+id/environnementchevron"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chevron"
@@ -95,12 +85,10 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginLeft="330dp" />
+        android:layout_marginTop="230dp" />
 
 
     <Button
-        android:id="@+id/transfoaliment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/transformation_des_aliments"
@@ -108,8 +96,7 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginTop="280dp" />
     <Button
         android:id="@+id/transfoalimentchevron"
         android:layout_width="wrap_content"
@@ -119,11 +106,9 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginLeft="330dp" />
+        android:layout_marginTop="280dp" />
 
     <Button
-        android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label"
@@ -132,7 +117,6 @@
         android:background="@android:color/transparent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="330dp"
-        android:layout_marginLeft="10dp"
         android:textAlignment="textStart"
         android:layout_gravity="start" />
     <Button
@@ -144,8 +128,7 @@
         android:textColor="@color/black"
         android:background="@android:color/transparent"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="330dp"
-        android:layout_marginLeft="330dp" />
+        android:layout_marginTop="330dp" />
 
 
 </FrameLayout>
