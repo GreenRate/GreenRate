@@ -14,6 +14,7 @@
         android:layout_height="150dp">
 
         <ImageButton
+            android:id="@+id/buttonProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -23,6 +24,7 @@
             tools:ignore="PxUsage" />
 
         <ImageButton
+            android:id="@+id/buttonList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -80,6 +82,7 @@
         android:layout_alignParentBottom="true">
 
         <ImageButton
+            android:id="@+id/buttonCompare"
             android:layout_width="150px"
             android:layout_height="150px"
             android:layout_marginTop="20dp"
@@ -89,6 +92,7 @@
             tools:ignore="PxUsage" />
 
         <ImageButton
+            android:id="@+id/buttonClassement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

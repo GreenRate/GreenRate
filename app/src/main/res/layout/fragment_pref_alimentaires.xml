@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +13,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="25sp"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
     <ImageButton
         android:id="@+id/backprefalimantaire"
@@ -131,4 +131,4 @@
         android:layout_marginTop="330dp" />
 
 
-</FrameLayout>
+</RelativeLayout>
