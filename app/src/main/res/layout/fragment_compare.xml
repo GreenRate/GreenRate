@@ -76,7 +76,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/p29734154d5052473g"
+                android:src="@drawable/ecoscoreA"
                 android:contentDescription="TODO"
                 tools:ignore="ContentDescription,HardcodedText" />
 
@@ -163,7 +163,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/p29734154d5052473g"
+                android:src="@drawable/ecoscoreA"
                 android:contentDescription="TODO"
                 tools:ignore="ContentDescription,HardcodedText" />
 

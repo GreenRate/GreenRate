@@ -63,7 +63,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:src="@drawable/p29734154d5052473g"
+            android:src="@drawable/ecoscoreA"
             android:layout_centerInParent="true"
             android:contentDescription="TODO"
             tools:ignore="ContentDescription,HardcodedText" />
