@@ -38,21 +38,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:text="@string/g_olocalisation"
-        android:layout_marginStart="20dp" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
-        android:layout_marginStart="290dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="370dp"
         android:text="@string/pourquoi_nous_autorisez_l_acc_s"
@@ -75,7 +60,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="500dp"
         android:text="@string/titregoeloc"
-        android:textColor="@color/black"
+        android:textColor="@android:color/transparent"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textSize="18sp" />
@@ -86,7 +71,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="545dp"
         android:textSize="16sp"
-        android:textColor="@color/black"
+        android:textColor="@android:color/transparent"
         android:textAlignment="center"
         android:text="@string/textgeoloc"/>
     <ImageButton
