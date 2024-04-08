@@ -1,134 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PrefAlimentairesFragment"
     android:background="@color/white"
     tools:ignore="Overdraw">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pr_f_rences_alimentaires"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-    <ImageButton
-        android:id="@+id/backprefalimantaire"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="5dp"
-        android:src="@drawable/backfleche"
-        android:background="@android:color/transparent" />
+    <RelativeLayout
+        android:id="@+id/enteteprefali"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pr_f_rences_alimentaires"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"/>
+        <ImageButton
+            android:id="@+id/backprefalimantaire"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/backfleche"
+            android:background="@android:color/transparent" />
 
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/zonechoix"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
 
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:src="@drawable/a"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="115dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/qualit_nutritionnelle"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="130dp" />
-    <Button
-        android:id="@+id/QualiteNutritionnellechevron"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chevron"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="130dp" />
+        <TextView
+            android:id="@+id/txtquali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qualit_nutritionnelle"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp" />
+        <Button
+            android:id="@+id/QualiteNutritionnellechevron"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/chevron"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignEnd="@id/txtquali"
+            android:layout_alignTop="@id/txtquali"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
 
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tomate"
+            android:layout_alignTop="@id/txtingredient"
+            android:layout_marginTop="-10dp"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:id="@+id/txtingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredient"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtquali"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/ingredientschevron"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/chevron"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignEnd="@id/txtingredient"
+            android:layout_alignTop="@id/txtingredient"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ingredient"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="180dp" />
-    <Button
-        android:id="@+id/ingredientschevron"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chevron"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="180dp" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/igp_image_full"
+            android:layout_alignTop="@id/txtlabel"
+            android:layout_marginTop="-10dp"/>
 
+        <TextView
+            android:id="@+id/txtlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtingredient"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/labelchevron"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/chevron"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:layout_alignEnd="@id/txtlabel"
+            android:layout_alignTop="@id/txtlabel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/environnement"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="230dp" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chevron"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="230dp" />
+    </RelativeLayout>
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/transformation_des_aliments"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="280dp" />
-    <Button
-        android:id="@+id/transfoalimentchevron"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chevron"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="280dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="330dp"
-        android:textAlignment="textStart"
-        android:layout_gravity="start" />
-    <Button
-        android:id="@+id/labelchevron"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chevron"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:background="@android:color/transparent"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="330dp" />
-
-
-</RelativeLayout>
+</FrameLayout>

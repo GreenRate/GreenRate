@@ -55,9 +55,6 @@ public class PrefAlimentairesFragment extends Fragment {
             fragmentTransaction.commit();
         });
 
-        binding.transfoalimentchevron.setOnClickListener(v -> {
-
-        });
 
         binding.labelchevron.setOnClickListener(v -> {
             FragmentManager fragmentManager = getParentFragmentManager();
