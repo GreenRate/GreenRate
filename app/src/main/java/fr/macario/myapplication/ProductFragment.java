@@ -12,24 +12,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import fr.macario.myapplication.databinding.FragmentProductBinding;
-import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProductFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ProductFragment extends Fragment {
 
     private FragmentProductBinding binding;
-    public String productName = new InfoProductGet().getProductName();
+    public InfoProductGet product = new InfoProductGet();
+    public String productName = product.getProductName();
 
 
 
-    public ProductFragment() {
-        // Required empty public constructor
-    }
-    public static ProductFragment newInstance(String param1, String param2) {
+    public ProductFragment() {}
+
+    public static ProductFragment newInstance() {
         ProductFragment fragment = new ProductFragment();
         Bundle args = new Bundle();
 
@@ -40,7 +35,6 @@ public class ProductFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

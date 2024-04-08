@@ -44,7 +44,6 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.android.support:support-annotations:28.0.0")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    //noinspection GradleDependency
     implementation("androidx.recyclerview:recyclerview:1.3.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -52,6 +51,12 @@ dependencies {
     implementation ("com.journeyapps:zxing-android-embedded:4.3.0")
     implementation ("com.google.android.material:material:1.11.0")
     implementation ("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+
+
+
     dependencies {
         val multidex_version = "2.0.1"
         implementation("androidx.multidex:multidex:$multidex_version")
