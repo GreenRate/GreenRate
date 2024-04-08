@@ -28,8 +28,7 @@
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
             android:src="@drawable/backfleche"
-            tools:ignore="ContentDescription,HardcodedText,PxUsage"
-            android:contentDescription="TODO" />
+            tools:ignore="PxUsage" />
 
     </RelativeLayout>
     <GridLayout
@@ -57,18 +56,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:src="@drawable/start"
-                android:layout_below="@id/nomproduit1"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:layout_below="@id/nomproduit1" />
             <ImageView
                 android:id="@+id/nutri1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscorea"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:src="@drawable/nutriscorea" />
 
             <ImageView
                 android:id="@+id/eco1"
@@ -76,9 +71,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ecoscoreA"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:src="@drawable/ecoscorea"/>
 
             <TextView
                 android:id="@+id/carbone1"
@@ -143,9 +136,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nomproduit2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/start"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:src="@drawable/start" />
 
             <ImageView
                 android:id="@+id/nutri2"
@@ -153,9 +144,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscoree"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:src="@drawable/nutriscoree" />
 
             <ImageView
                 android:id="@+id/eco2"
@@ -163,9 +152,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ecoscoreA"
-                android:contentDescription="TODO"
-                tools:ignore="ContentDescription,HardcodedText" />
+                android:src="@drawable/ecoscoreb" />
 
             <TextView
                 android:id="@+id/carbone2"
