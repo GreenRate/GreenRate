@@ -7,7 +7,6 @@
     tools:ignore="Overdraw,UseSwitchCompatOrMaterialXml"
     android:background="@color/white">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:layout_width="wrap_content"
@@ -98,7 +97,6 @@
         android:layout_marginTop="15dp"
         android:background="@android:color/transparent"
         android:src="@drawable/backfleche"
-        tools:ignore="ContentDescription,HardcodedText,PxUsage"
-        android:contentDescription="TODO" />
+        tools:ignore="PxUsage" />
 
 </FrameLayout>
