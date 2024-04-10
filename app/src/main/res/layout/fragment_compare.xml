@@ -54,7 +54,7 @@
             <ImageView
                 android:id="@+id/imageproduit1"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:src="@drawable/prince"
                 android:layout_below="@id/nomproduit1" />
             <ImageView
@@ -113,7 +113,7 @@
             <ImageView
                 android:id="@+id/imageproduit2"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="200dp"
                 android:layout_below="@id/nomproduit2"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/gazpacho" />
