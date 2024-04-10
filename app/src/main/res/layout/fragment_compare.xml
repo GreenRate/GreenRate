@@ -56,14 +56,14 @@
                 android:id="@+id/imageproduit1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:src="@drawable/prince"
                 android:layout_below="@id/nomproduit1" />
             <ImageView
                 android:id="@+id/nutri1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_below="@id/imageproduit1"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/nutriscored" />
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri1"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/ecoscorec"/>
 
@@ -82,8 +82,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/eco1"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/bilan_carbone"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/eco1"
                 android:layout_toEndOf="@id/carbone1"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginStart="10dp"
                 android:text="@string/abs"
                 android:textColor="@color/black"
@@ -124,7 +124,7 @@
                 android:layout_below="@id/nomproduit2"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/gazpacho"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="8dp"/>
 
             <ImageView
                 android:id="@+id/nutri2"
@@ -133,7 +133,7 @@
                 android:layout_below="@id/imageproduit2"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/nutriscorea"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="8dp"/>
 
             <ImageView
                 android:id="@+id/eco2"
@@ -142,7 +142,7 @@
                 android:layout_below="@id/nutri2"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/ecoscorea"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:id="@+id/carbone2"
@@ -152,7 +152,7 @@
                 android:text="@string/bilan_carbone"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:id="@+id/valcarbone2"
@@ -160,7 +160,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/eco2"
                 android:layout_toEndOf="@id/carbone2"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginStart="10dp"
                 android:text="@string/abs"
                 android:textColor="@color/black"
