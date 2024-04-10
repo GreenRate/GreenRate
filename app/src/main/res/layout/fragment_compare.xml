@@ -47,7 +47,7 @@
                 android:id="@+id/nomproduit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/produit_1"
+                android:text="@string/prince_chocolat"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:layout_centerHorizontal="true"/>
@@ -55,7 +55,7 @@
                 android:id="@+id/imageproduit1"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/start"
+                android:src="@drawable/prince"
                 android:layout_below="@id/nomproduit1" />
             <ImageView
                 android:id="@+id/nutri1"
@@ -63,7 +63,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscorea" />
+                android:src="@drawable/nutriscored" />
 
             <ImageView
                 android:id="@+id/eco1"
@@ -71,7 +71,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri1"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ecoscorea"/>
+                android:src="@drawable/ecoscorec"/>
 
             <TextView
                 android:id="@+id/carbone1"
@@ -89,7 +89,7 @@
                 android:layout_below="@id/eco1"
                 android:layout_alignStart="@id/carbone1"
                 android:layout_marginHorizontal="130dp"
-                android:text="@string/carbone1"
+                android:text="@string/abs"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -108,8 +108,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/carbone1"
                 android:layout_alignStart="@id/prix1"
-                android:layout_marginHorizontal="130dp"
-                android:text="@string/prix1"
+                android:layout_marginHorizontal="100dp"
+                android:text="@string/variable"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="@string/produit_2"
+                android:text="@string/alvalle_gazpacho"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -136,7 +136,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nomproduit2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/start" />
+                android:src="@drawable/gazpacho" />
 
             <ImageView
                 android:id="@+id/nutri2"
@@ -144,7 +144,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/imageproduit2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/nutriscoree" />
+                android:src="@drawable/nutriscorea" />
 
             <ImageView
                 android:id="@+id/eco2"
@@ -152,7 +152,7 @@
                 android:layout_height="100dp"
                 android:layout_below="@id/nutri2"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ecoscoreb" />
+                android:src="@drawable/ecoscorea" />
 
             <TextView
                 android:id="@+id/carbone2"
@@ -170,7 +170,7 @@
                 android:layout_below="@id/eco2"
                 android:layout_alignStart="@id/carbone2"
                 android:layout_marginHorizontal="130dp"
-                android:text="@string/carbone2"
+                android:text="@string/abs"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -188,8 +188,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/valcarbone2"
                 android:layout_alignStart="@id/prix2"
-                android:layout_marginHorizontal="130dp"
-                android:text="@string/prix2"
+                android:layout_marginHorizontal="100dp"
+                android:text="@string/variable"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
         </RelativeLayout>

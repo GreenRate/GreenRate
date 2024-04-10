@@ -56,5 +56,9 @@
     <string name="nom_du_produit">Nom du produit…</string>
     <string name="product">product</string>
     <string name="prixproduct">"  prix product"</string>
+    <string name="abs">ABS</string>
+    <string name="variable">Variable</string>
+    <string name="prince_chocolat">Prince Chocolat</string>
+    <string name="alvalle_gazpacho">Alvalle Gazpacho</string>
 
 </resources>
