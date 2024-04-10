@@ -93,26 +93,6 @@
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/prix1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/carbone1"
-                android:layout_marginStart="5dp"
-                android:text="@string/prix"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/carbone1"
-                android:layout_alignStart="@id/prix1"
-                android:layout_marginHorizontal="100dp"
-                android:text="@string/variable"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -174,24 +154,6 @@
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/prix2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/carbone2"
-                android:text="@string/prix"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/valcarbone2"
-                android:layout_alignStart="@id/prix2"
-                android:layout_marginHorizontal="100dp"
-                android:text="@string/variable"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
         </RelativeLayout>
 
 
