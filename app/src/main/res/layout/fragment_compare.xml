@@ -105,7 +105,8 @@
                 android:src="@drawable/winner"
                 android:layout_below="@id/carbone1"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"/>
 
         </RelativeLayout>
 
@@ -180,7 +181,8 @@
                 android:src="@drawable/winner"
                 android:layout_below="@id/carbone2"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:visibility="visible"/>
 
         </RelativeLayout>
 
