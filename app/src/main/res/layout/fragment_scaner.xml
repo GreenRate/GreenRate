@@ -65,6 +65,7 @@
             android:layout_below="@id/button_scann"
             android:layout_marginTop="40dp"/>
         <TextView
+            android:id="@+id/msg_bvn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hello_greenrate"
@@ -108,7 +109,6 @@
         android:layout_height="match_parent"
         tools:context=".ProductFragment"
         android:orientation="horizontal"
-        android:background="@color/white"
         tools:ignore="Overdraw">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -138,6 +138,7 @@
             android:layout_height="200dp"
             android:layout_marginTop="100dp">
             <ImageView
+                android:id="@+id/mail"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/mail"
@@ -149,6 +150,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="300dp">
             <ImageView
+                android:id="@+id/nutriscored"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/nutriscored"
@@ -159,6 +161,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="400dp">
             <ImageView
+                android:id="@+id/ecoscored"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/ecoscored"
@@ -178,6 +181,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="30dp"/>
             <TextView
+                android:id="@+id/prx_prd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/prixproduct"

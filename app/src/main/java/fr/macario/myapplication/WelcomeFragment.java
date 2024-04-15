@@ -78,6 +78,7 @@ public class WelcomeFragment extends Fragment {
                 scanerFragment ScanFragment = new scanerFragment();
                 fragmentTransaction.add(R.id.fragment_container_view, ScanFragment);
                 fragmentTransaction.commit();
+                binding.usernameInput.setEnabled(false);
             });
         } else {
             FragmentManager fragmentManager = getParentFragmentManager();
@@ -85,6 +86,7 @@ public class WelcomeFragment extends Fragment {
             scanerFragment ScanerFragment = new scanerFragment();
             fragmentTransaction.add(R.id.fragment_container_view, ScanerFragment);
             fragmentTransaction.commit();
+            binding.usernameInput.setEnabled(false);
         }
     }
 }

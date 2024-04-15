@@ -17,12 +17,14 @@ import fr.macario.myapplication.databinding.FragmentProductBinding;
 public class ProductFragment extends Fragment {
 
     private FragmentProductBinding binding;
-    public InfoProductGet product = new InfoProductGet();
-    public String productName = product.getProductName();
+    public String productName = new scanerFragment().getProductName();
 
-
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
 
     public ProductFragment() {}
+
 
     public static ProductFragment newInstance() {
         ProductFragment fragment = new ProductFragment();
@@ -48,7 +50,9 @@ public class ProductFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
             binding.nompruduit.setText(productName);
+
 
             binding.backproduct.setOnClickListener(v -> {
                 FragmentManager fragmentManager = getParentFragmentManager();
