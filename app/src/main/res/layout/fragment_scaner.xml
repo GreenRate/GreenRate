@@ -141,6 +141,7 @@
             android:id="@+id/zoneproduct"
             android:layout_below="@id/zoneenteteproduct">
             <ImageView
+                android:id="@+id/imageproduct"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/prince"
@@ -153,6 +154,7 @@
             android:id="@+id/zonenutri"
             android:layout_below="@id/zoneproduct">
             <ImageView
+                android:id="@+id/nutriscored"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/nutriscored"
@@ -163,6 +165,7 @@
             android:layout_height="200dp"
             android:layout_below="@id/zonenutri">
             <ImageView
+                android:id="@+id/ecoscored"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ecoscorec"

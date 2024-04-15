@@ -104,21 +104,18 @@ public class scanerFragment extends Fragment {
 
                     binding.nompruduit.setVisibility(View.VISIBLE);
                     binding.backproduct.setVisibility(View.VISIBLE);
-                    binding.mail.setVisibility(View.VISIBLE);
+                    binding.imageproduct.setVisibility(View.VISIBLE);
                     binding.ecoscored.setVisibility(View.VISIBLE);
                     binding.nutriscored.setVisibility(View.VISIBLE);
-                    binding.prx.setVisibility(View.VISIBLE);
-                    binding.prxPrd.setVisibility(View.VISIBLE);
+
 
                     binding.backproduct.setOnClickListener(v -> {
 
                         binding.nompruduit.setVisibility(View.INVISIBLE);
                         binding.backproduct.setVisibility(View.INVISIBLE);
-                        binding.mail.setVisibility(View.INVISIBLE);
+                        binding.imageproduct.setVisibility(View.INVISIBLE);
                         binding.ecoscored.setVisibility(View.INVISIBLE);
                         binding.nutriscored.setVisibility(View.INVISIBLE);
-                        binding.prx.setVisibility(View.INVISIBLE);
-                        binding.prxPrd.setVisibility(View.INVISIBLE);
 
                         binding.buttonScann.setVisibility(View.VISIBLE);
                         binding.buttonCompare.setVisibility(View.VISIBLE);
@@ -230,11 +227,9 @@ public class scanerFragment extends Fragment {
 
         binding.nompruduit.setVisibility(View.INVISIBLE);
         binding.backproduct.setVisibility(View.INVISIBLE);
-        binding.mail.setVisibility(View.INVISIBLE);
+        binding.imageproduct.setVisibility(View.INVISIBLE);
         binding.ecoscored.setVisibility(View.INVISIBLE);
         binding.nutriscored.setVisibility(View.INVISIBLE);
-        binding.prx.setVisibility(View.INVISIBLE);
-        binding.prxPrd.setVisibility(View.INVISIBLE);
 
 
 
