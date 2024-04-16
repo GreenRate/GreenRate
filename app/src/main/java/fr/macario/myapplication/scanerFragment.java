@@ -189,13 +189,6 @@ public class scanerFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.nompruduit.setVisibility(View.INVISIBLE);
-        binding.backproduct.setVisibility(View.INVISIBLE);
-        binding.imageproduct.setVisibility(View.INVISIBLE);
-        binding.ecoscored.setVisibility(View.INVISIBLE);
-        binding.nutriscored.setVisibility(View.INVISIBLE);
-
-
 
 
         binding.buttonProfile.setOnClickListener(v -> {
