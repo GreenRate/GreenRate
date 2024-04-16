@@ -1,12 +1,15 @@
 package fr.macario.myapplication;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.json.JSONObject;
@@ -28,6 +31,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.bumptech.glide.Glide;
 import com.journeyapps.barcodescanner.ScanContract;
 import com.journeyapps.barcodescanner.ScanIntentResult;
 import com.journeyapps.barcodescanner.ScanOptions;
@@ -38,6 +42,7 @@ import java.io.IOException;
 
 public class scanerFragment extends Fragment {
 
+    private Image imageProduct;
     private TextView nompruduit;
     public String barcodeValue;
     public String productName;
@@ -87,82 +92,41 @@ public class scanerFragment extends Fragment {
                             productName = productObject.getString("product_name");
                             productImage = productObject.getString("image_url");
 
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
-                    System.out.println(productName);
 
-
-                    binding.buttonScann.setVisibility(View.INVISIBLE);
-                    binding.buttonCompare.setVisibility(View.INVISIBLE);
-                    binding.buttonList.setVisibility(View.INVISIBLE);
-                    binding.buttonClassement.setVisibility(View.INVISIBLE);
-                    binding.buttonProfile.setVisibility(View.INVISIBLE);
-                    binding.logo.setVisibility(View.INVISIBLE);
-                    binding.msgBvn.setVisibility(View.INVISIBLE);
-
-                    binding.nompruduit.setVisibility(View.VISIBLE);
-                    binding.backproduct.setVisibility(View.VISIBLE);
-                    binding.imageproduct.setVisibility(View.VISIBLE);
-                    binding.ecoscored.setVisibility(View.VISIBLE);
-                    binding.nutriscored.setVisibility(View.VISIBLE);
-
-
-                    binding.backproduct.setOnClickListener(v -> {
-
-                        binding.nompruduit.setVisibility(View.INVISIBLE);
-                        binding.backproduct.setVisibility(View.INVISIBLE);
-                        binding.imageproduct.setVisibility(View.INVISIBLE);
-                        binding.ecoscored.setVisibility(View.INVISIBLE);
-                        binding.nutriscored.setVisibility(View.INVISIBLE);
-
-                        binding.buttonScann.setVisibility(View.VISIBLE);
-                        binding.buttonCompare.setVisibility(View.VISIBLE);
-                        binding.buttonList.setVisibility(View.VISIBLE);
-                        binding.buttonClassement.setVisibility(View.VISIBLE);
-                        binding.buttonProfile.setVisibility(View.VISIBLE);
-                        binding.logo.setVisibility(View.VISIBLE);
-                        binding.msgBvn.setVisibility(View.VISIBLE);
-
-                        binding.buttonScann.setEnabled(true);
-                        binding.buttonCompare.setEnabled(true);
-                        binding.buttonList.setEnabled(true);
-                        binding.buttonClassement.setEnabled(true);
-                        binding.buttonProfile.setEnabled(true);
-                        binding.logo.setEnabled(true);
-                        binding.msgBvn.setEnabled(true);
-
-                        binding.nompruduit.setText(productName);
-                    });
 
 
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
+                            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                            builder.setTitle(productName);
+                            builder.setMessage(result.getContents());
 
+                            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            }).show();
                         }
                     });
-
-
-
-
-
-
-
-
-
-
-
                 }
-
             });
 
 
-
-
-
+            binding.buttonScann.setEnabled(true);
+            binding.buttonCompare.setEnabled(true);
+            binding.buttonList.setEnabled(true);
+            binding.buttonClassement.setEnabled(true);
+            binding.buttonProfile.setEnabled(true);
+            binding.logo.setEnabled(true);
+            binding.msgBvn.setEnabled(true);
 
 
 
@@ -280,4 +244,3 @@ public class scanerFragment extends Fragment {
 
 
 }
-
