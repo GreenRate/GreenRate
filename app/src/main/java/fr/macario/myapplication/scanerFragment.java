@@ -40,6 +40,18 @@ import fr.macario.myapplication.databinding.FragmentScanerBinding;
 import java.io.IOException;
 import java.util.Objects;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.widget.ImageView;
+
 public class scanerFragment extends Fragment {
 
 
@@ -52,7 +64,8 @@ public class scanerFragment extends Fragment {
     private String productNutriScore;
     private String productEcoScore;
     public String url;
-    public URL urlImage = null;
+
+
 
     public String getProductName() {
         return productName;
@@ -92,7 +105,6 @@ public class scanerFragment extends Fragment {
                             productImage = productObject.getString("image_url");
                             productNutriScore = productObject.getString("nutriscore_grade");
                             productEcoScore = productObject.getString("ecoscore_grade");
-                            urlImage = new URL(productImage);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -107,14 +119,8 @@ public class scanerFragment extends Fragment {
                         @Override
                         public void run() {
 
-                            //Drawable drawableA = getResources().getDrawable(R.drawable.a);
-                            //nutriScore.setImageDrawable(drawableA);
-                            //Glide.with(getContext()).load(productImage).into(imgProduit);
                             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                             builder.setTitle(productName);
-                            builder.setMessage(result.getContents());
-
-
                             builder.setMessage("Nutriscore : " + productNutriScore.toUpperCase() + "\nEcoscore : " + productEcoScore.toUpperCase());
                             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                 @Override
@@ -125,44 +131,9 @@ public class scanerFragment extends Fragment {
                         }
                     });
                 }
+
+
             });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*
-            FragmentManager fragmentManager = getParentFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            ProductFragment productFragment = new ProductFragment();
-            fragmentTransaction.add(R.id.fragment_container_view, productFragment);
-            fragmentTransaction.commit();
-
-             */
-
-
-
         }
     }
 
