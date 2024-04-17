@@ -2,7 +2,7 @@ package fr.macario.myapplication;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.media.Image;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -15,7 +15,6 @@ import android.widget.TextView;
 import org.json.JSONObject;
 import org.json.JSONException;
 
-import fr.macario.myapplication.databinding.FragmentProductBinding;
 import okhttp3.OkHttpClient;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -39,15 +38,21 @@ import com.journeyapps.barcodescanner.ScanOptions;
 import fr.macario.myapplication.databinding.FragmentScanerBinding;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class scanerFragment extends Fragment {
 
-    private Image imageProduct;
+
+    public ImageView imgProduit;
+    public ImageView nutriScore;
     private TextView nompruduit;
     public String barcodeValue;
     public String productName;
     private String productImage;
+    private String productNutriScore;
+    private String productEcoScore;
     public String url;
+    public URL urlImage = null;
 
     public String getProductName() {
         return productName;
@@ -58,18 +63,12 @@ public class scanerFragment extends Fragment {
 
 
     private FragmentScanerBinding binding;
-    public FragmentProductBinding binding_special;
     public scanerFragment() {}
 
     ActivityResultLauncher<ScanOptions> barLauncher = registerForActivityResult(new ScanContract(), this::onActivityResult);
 
     public void onActivityResult(ScanIntentResult result) {
         if (result.getContents() != null) {
-            binding.buttonProfile.setEnabled(false);
-            binding.buttonCompare.setEnabled(false);
-            binding.buttonList.setEnabled(false);
-            binding.buttonCompare.setEnabled(false);
-            binding.buttonScann.setEnabled(false);
             barcodeValue = result.getContents();
             url = "https://world.openfoodfacts.net/api/v2/product/" + barcodeValue;
             Request request = new Request.Builder().url(url).build();
@@ -91,8 +90,9 @@ public class scanerFragment extends Fragment {
                             System.out.println("productObject");
                             productName = productObject.getString("product_name");
                             productImage = productObject.getString("image_url");
-
-
+                            productNutriScore = productObject.getString("nutriscore_grade");
+                            productEcoScore = productObject.getString("ecoscore_grade");
+                            urlImage = new URL(productImage);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -100,14 +100,22 @@ public class scanerFragment extends Fragment {
 
 
 
+
+
                     Handler handler = new Handler(Looper.getMainLooper());
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
+
+                            //Drawable drawableA = getResources().getDrawable(R.drawable.a);
+                            //nutriScore.setImageDrawable(drawableA);
+                            //Glide.with(getContext()).load(productImage).into(imgProduit);
                             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                             builder.setTitle(productName);
                             builder.setMessage(result.getContents());
 
+
+                            builder.setMessage("Nutriscore : " + productNutriScore.toUpperCase() + "\nEcoscore : " + productEcoScore.toUpperCase());
                             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -120,13 +128,7 @@ public class scanerFragment extends Fragment {
             });
 
 
-            binding.buttonScann.setEnabled(true);
-            binding.buttonCompare.setEnabled(true);
-            binding.buttonList.setEnabled(true);
-            binding.buttonClassement.setEnabled(true);
-            binding.buttonProfile.setEnabled(true);
-            binding.logo.setEnabled(true);
-            binding.msgBvn.setEnabled(true);
+
 
 
 
