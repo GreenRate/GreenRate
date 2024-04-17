@@ -230,7 +230,18 @@ public class scanerFragment extends Fragment {
             fragmentTransaction.commit();
         });
 
-        binding.buttonClassement.setOnClickListener(v -> {});
+        binding.buttonClassement.setOnClickListener(v -> {
+            binding.buttonProfile.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonList.setEnabled(false);
+            binding.buttonCompare.setEnabled(false);
+            binding.buttonScann.setEnabled(false);
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            SearchFragment searchFragment = new SearchFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, searchFragment);
+            fragmentTransaction.commit();
+        });
         binding.buttonScann.setOnClickListener(v -> scanCode());
     }
 
