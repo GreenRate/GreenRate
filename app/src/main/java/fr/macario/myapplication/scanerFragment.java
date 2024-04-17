@@ -107,9 +107,6 @@ public class scanerFragment extends Fragment {
                         @Override
                         public void run() {
 
-                            //Drawable drawableA = getResources().getDrawable(R.drawable.a);
-                            //nutriScore.setImageDrawable(drawableA);
-                            //Glide.with(getContext()).load(productImage).into(imgProduit);
                             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                             builder.setTitle(productName);
                             builder.setMessage(result.getContents());
@@ -126,43 +123,6 @@ public class scanerFragment extends Fragment {
                     });
                 }
             });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*
-            FragmentManager fragmentManager = getParentFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            ProductFragment productFragment = new ProductFragment();
-            fragmentTransaction.add(R.id.fragment_container_view, productFragment);
-            fragmentTransaction.commit();
-
-             */
-
-
-
         }
     }
 
