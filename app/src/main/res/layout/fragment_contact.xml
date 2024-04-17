@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactFragment">
+    tools:context=".ContactFragment"
+    android:background="@color/white">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:textColor="@color/black"
             android:text="@string/nous_contacter" />
         <ImageButton
-            android:id="@+id/backsetting"
+            android:id="@+id/backcontact"
             android:layout_width="150px"
             android:layout_height="150px"
             android:layout_centerVertical="true"

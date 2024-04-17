@@ -72,11 +72,18 @@ public class ProfilFragment extends Fragment {
             fragmentTransaction.add(R.id.fragment_container_view, prefAlimentairesFragment);
             fragmentTransaction.commit();
         });
-
-
         binding.buttonContact.setOnClickListener(v -> {
-
+            binding.backprofil.setEnabled(false);
+            binding.buttonSettings.setEnabled(false);
+            binding.buttonContact.setEnabled(false);
+            binding.buttonPrefAlim.setEnabled(false);
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            ContactFragment contactFragment = new ContactFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, contactFragment);
+            fragmentTransaction.commit();
         });
+
 
     }
 }
