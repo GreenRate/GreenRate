@@ -38,8 +38,8 @@ public class ContactFragment extends Fragment {
             binding.backcontact.setEnabled(false);
             FragmentManager fragmentManager = getParentFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            ContactFragment contactFragment = new ContactFragment();
-            fragmentTransaction.add(R.id.fragment_container_view, contactFragment);
+            ProfilFragment profilFragment = new ProfilFragment();
+            fragmentTransaction.add(R.id.fragment_container_view, profilFragment);
             fragmentTransaction.commit();
         });
     }
